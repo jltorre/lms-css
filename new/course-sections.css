@@ -9,21 +9,44 @@ body.format-buttons #section-0 .summary .video-js {
 body.format-buttons #section-0 .summary .description {
   color: var(--text-color);
 }
-body.format-buttons #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 {
+body.format-buttons #section-0 .summary .label-datasheet.container > .row {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
-body.format-buttons #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 .action-buttons a {
-  margin: 7px 0 !important;
+body.format-buttons #section-0 .summary .label-datasheet.container > .row > [class*=col-] {
+  flex: 1 1 100%;
+  max-width: 100%;
+  width: 100%;
 }
-body.format-buttons #section-0 .summary .label-datasheet.container > .row > [class*=col-lg-] {
-  flex: 1 1 0%;
-  max-width: none !important;
-  width: auto !important;
+@media (min-width: 576px) and (max-width: 991.98px) {
+  body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-2 {
+    flex: 1 1 50%;
+    max-width: 50%;
+    width: 50%;
+  }
 }
-body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
-  flex: 2 1 0% !important;
+@media (min-width: 992px) {
+  body.format-buttons #section-0 .summary .label-datasheet.container > .row > [class*=col-lg-] {
+    flex: 1 1 0%;
+    max-width: none !important;
+    width: auto !important;
+  }
+  body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
+    flex: 2 1 0% !important;
+  }
+  body.format-buttons #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body.format-buttons #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 .action-buttons a {
+    margin: 7px 0 !important;
+  }
 }
 body.format-buttons #buttonsectioncontainer {
   margin: 40px auto;

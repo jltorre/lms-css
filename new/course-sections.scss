@@ -12,23 +12,50 @@ body.format-buttons {
             }
             .label-datasheet.container {
                 > .row {
-                    .col-sm-12.col-lg-2.p-1 {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        .action-buttons {
-                            a {
-                                margin: 7px 0 !important;
-                            }
+                    display: flex;
+                    flex-wrap: wrap;
+                
+                    // Estilo base (móvil)
+                    > [class*="col-"] {
+                        flex: 1 1 100%;
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                    @media (min-width: 576px) and (max-width: 991.98px) {
+                        > .col-lg-4 {
+                            flex: 1 1 100%;
+                            max-width: 100%;
+                            width: 100%;
+                        }
+                
+                        > .col-lg-2 {
+                            flex: 1 1 50%;
+                            max-width: 50%;
+                            width: 50%;
                         }
                     }
-                    > [class*="col-lg-"] {
-                        flex: 1 1 0%;
-                        max-width: none !important;
-                        width: auto !important;
-                    }
-                    > .col-lg-4 {
-                        flex: 2 1 0% !important;
+                    @media (min-width: 992px) {
+                        > [class*="col-lg-"] {
+                            flex: 1 1 0%;
+                            max-width: none !important;
+                            width: auto !important;
+                        }
+                
+                        > .col-lg-4 {
+                            flex: 2 1 0% !important;
+                        }
+                
+                        .col-sm-12.col-lg-2.p-1 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                
+                            .action-buttons {
+                                a {
+                                    margin: 7px 0 !important;
+                                }
+                            }
+                        }
                     }
                 }
             }
