@@ -6,12 +6,11 @@ body.format-buttons {
     }
     #page {
         #page-header {
-            padding: 10em 3% 6em !important;
+            padding: 10em 0 6em !important;
             > div {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
                 width: 93%;
                 max-width: 1600px;
+                margin: auto;
             }
         }
         #page-content, .secondary-navigation {
