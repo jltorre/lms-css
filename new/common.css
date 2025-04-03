@@ -55,6 +55,15 @@ body.format-buttons #section-0 .summary .video-js {
 body.format-buttons #section-0 .summary .description {
   color: var(--text-color);
 }
+body.format-buttons #section-0 .summary .label-datasheet.container > row > .col-lg-4 {
+  flex: 2 1 0%;
+}
+body.format-buttons #section-0 .summary .label-datasheet.container > row > .col-lg-2 {
+  flex: 1 1 0%;
+}
+body.format-buttons #section-0 .summary .label-datasheet.container > row > [class^=col-] {
+  min-width: 0;
+}
 body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 {
   display: flex;
   flex-direction: column;
@@ -165,9 +174,8 @@ a {
   justify-content: space-around;
   width: 100%;
   padding: 10px;
-  overflow: auto;
   text-align: center;
-  white-space: normal;
+  white-space: normal !important;
 }
 .btn-outline:hover, .btn-outline:active, .btn-outline:focus {
   background: var(--default-gradient) !important;
