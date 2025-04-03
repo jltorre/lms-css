@@ -125,6 +125,14 @@ body#page-site-index #frontpage-course-list .frontpage-course-list-enrolled {
   grid-gap: 1rem;
 }
 
+body#page-course-index-category #region-main,
+body#page-site-index #region-main {
+  background-color: var(--course-body-bg);
+}
+body#page-course-index-category .coursebox,
+body#page-site-index .coursebox {
+  background: #fff !important;
+}
 body#page-course-index-category .coursebox .coursename a,
 body#page-site-index .coursebox .coursename a {
   color: #fff;

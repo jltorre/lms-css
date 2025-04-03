@@ -130,7 +130,11 @@ body#page-site-index {
 }
 body#page-course-index-category, 
 body#page-site-index {
+    #region-main {
+        background-color: var(--course-body-bg);
+    }
     .coursebox {
+        background: #fff !important;
         .coursename {
             a {
                 color: #fff;
