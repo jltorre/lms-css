@@ -138,9 +138,12 @@ a {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+  white-space: normal;
 }
 .btn-outline:hover, .btn-outline:active, .btn-outline:focus {
-  border: none;
   background: var(--default-gradient) !important;
   color: #fff !important;
   text-decoration: none;
