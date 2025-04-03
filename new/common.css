@@ -2,45 +2,35 @@
 #page.drawers {
   padding-left: 4em !important;
 }
+
 body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header {
   background-image: url(https://haz.institutortve.com/wp-content/uploads/2024/04/bg.jpeg) !important;
-  .page-header-headings {
-    color: #fff;
-  }
 }
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header .page-header-headings {
+  color: #fff;
+}
+
 /* COURSE SETTINGS */
-body.format-buttons {
-  .secondary-navigation {
-    .navigation {
-      padding-top: 1em;
-      .nav-tabs {
-        li.nav-item {
-          .nav-link {
-            height: 50px;
-            border-radius: 6px;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0;
-            padding: 20px;
-            &.active, &:hover, &:focus {
-              border: 2px solid var(--primary) !important;
-              background-color: #f8f9fa !important;
-            }
-          }
-        }
-      }
-    }
-  }
-  &:not(.editing) {
-    li.activity {
-      .activity-item {
-        aspect-ratio: 5/2.75;
-        border-radius: 10px;
-        overflow: hidden;
-        background-size: cover !important;
-      }
-    }
-  }
+body.format-buttons .secondary-navigation .navigation {
+  padding-top: 1em;
+}
+body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
+  height: 50px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+}
+body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link.active, body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:hover, body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:focus {
+  border: 2px solid var(--primary) !important;
+  background-color: #f8f9fa !important;
+}
+body.format-buttons:not(.editing) li.activity .activity-item {
+  aspect-ratio: 5/2.75;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover !important;
 }
 
 /* elements */
@@ -81,10 +71,6 @@ a {
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
-
-.btn-primary {
-  background: var(--default-gradient);
 }
 
 .input-group > .input-group-append .btn {

@@ -1,6 +1,46 @@
 /* padding para evitar el solapamiento del menu lateral */
 #page.drawers {
-    padding-left: 4em;
+    padding-left: 4em !important;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header {
+    background-image: url(https://haz.institutortve.com/wp-content/uploads/2024/04/bg.jpeg) !important;
+    .page-header-headings {
+      color: #fff;
+    }
+}
+/* COURSE SETTINGS */
+body.format-buttons {
+    .secondary-navigation {
+        .navigation {
+            padding-top: 1em;
+            .nav-tabs {
+                li.nav-item {
+                    .nav-link {
+                        height: 50px;
+                        border-radius: 6px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 0;
+                        padding: 20px;
+                        &.active, &:hover, &:focus {
+                            border: 2px solid var(--primary) !important;
+                            background-color: #f8f9fa !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:not(.editing) {
+        li.activity {
+            .activity-item {
+                aspect-ratio: 5/2.75;
+                border-radius: 10px;
+                overflow: hidden;
+                background-size: cover !important;
+            }
+        }
+    }
 }
 /* elements */
 a {
@@ -23,7 +63,7 @@ a {
 }
 /* end forms */
 /* buttons */
-.btn {
+.btn, .btn-outline {
     font-family: Roboto, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -32,8 +72,12 @@ a {
     text-transform: uppercase;
     padding: 10px 34px;
 }
-.btn-primary {
-    background: var(--default-gradient);
+
+.btn-outline {
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 .input-group {
     > .input-group-append {
