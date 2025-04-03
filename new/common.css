@@ -73,6 +73,11 @@ body.format-buttons #section-1 ul.section.img-text li.activity {
   width: 100%;
   height: 160px;
 }
+@media screen and (max-width: 768px) {
+  body.format-buttons #section-1 ul.section.img-text li.activity {
+    height: 300px;
+  }
+}
 body.format-buttons #section-1 ul.section.img-text li.activity .description {
   margin: 0 !important;
 }
