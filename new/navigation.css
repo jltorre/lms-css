@@ -27,4 +27,15 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu a.dropdown-toggle,
 div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login,
 div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  .drawer.drawer-right {
+    top: 0;
+    padding-top: 100px;
+    height: 100vh;
+  }
+  #page.drawers.show-drawer-right {
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=navigation.css.map */
