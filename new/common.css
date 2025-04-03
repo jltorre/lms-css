@@ -156,9 +156,11 @@ body#page-course-index-category .coursebox .content .courseimage:after,
 body#page-site-index .coursebox .content .courseimage:after {
   border-radius: 0 !important;
 }
+body#page-course-index-category .coursebox .content .summary,
 body#page-course-index-category .coursebox .content .customfields-container,
+body#page-site-index .coursebox .content .summary,
 body#page-site-index .coursebox .content .customfields-container {
-  padding: 0 15px;
+  padding: 0 15px !important;
 }
 body#page-course-index-category .paging.paging-morelink,
 body#page-site-index .paging.paging-morelink {
