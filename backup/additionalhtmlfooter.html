@@ -1,0 +1,495 @@
+<footer class="footer-section w-100">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="widget company-intro-widget">
+            <a target=_"blank" href="https://haz.institutortve.com/" class="site-logo"><img src="https://assets.cdn.ethinkcloud.net/rtve/logo-both.png" alt="logo" width="80%" height="80%"></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+          <div class="logos">
+  <a href="https://www.rtve.es/" target="_blank" title="RTVE">
+    <img width="102" height="54" src="https://haz.institutortve.com/wp-content/uploads/2023/07/logo-rtve.png" class="img-fluid" alt="RTVE" decoding="async" loading="lazy">
+  </a>
+  <a href="https://european-union.europa.eu/index_es" target="_blank" title="Financiado por la Unión Europea - NextGenerationUE">
+    <img width="220" height="58" src="https://haz.institutortve.com/wp-content/uploads/2024/02/logo-ue-2024.png" class="img-fluid" alt="Financiado por la Unión Europea - NextGenerationUE" decoding="async" loading="lazy">
+  </a>
+  <a href="https://www.culturaydeporte.gob.es/portada.html" target="_blank" title="Ministerio de Cultura y Deporte">
+    <img width="212" height="69" src="https://haz.institutortve.com/wp-content/uploads/2024/02/logo-ministerio-cultura-2024.png" class="img-fluid" alt="Ministerio de Cultura y Deporte" decoding="async" loading="lazy">
+  </a>
+  <a href="https://planderecuperacion.gob.es/" target="_blank" title="Plan de Recuperación, Transformación y Resiliencia">
+    <img width="220" height="65" src="https://haz.institutortve.com/wp-content/uploads/2024/02/logo-plan-rtr-2024.png" class="img-fluid" alt="Plan de Recuperación, Transformación y Resiliencia" decoding="async" loading="lazy">
+  </a>
+</div>
+          <div id="socialmedia-links">
+           <ul class="social-icons">
+              <li><a target="_blank" href="https://www.instagram.com/rtvein/" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://youtube.com/@RTVEin?si=bTkFr78X0CiPCjrA" class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/school/18530124/admin/feed/posts/" class="social-icon"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/rtveinstituto" class="social-icon"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/RTVEin" class="social-icon"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>        
+           </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 text-sm-left text-center">
+          <span class="copy-right-text">© Proyecto HAZ, todos los derechos reservados</span>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <ul class="terms-privacy d-flex justify-content-sm-end justify-content-center">
+            <li><a target="_blank" href="https://lms.haz.institutortve.com/local/staticpage/view.php?page=aviso_legal">Aviso Legal</a></li>
+            <li><a target="_blank" href="https://lms.haz.institutortve.com/local/staticpage/view.php?page=politica_privacidad">Política de privacidad</a></li>
+            <li><a target="_blank" href="https://lms.haz.institutortve.com/local/staticpage/view.php?page=politica-cookies">Política de cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--Changing buttons -->
+<script>
+if (document.querySelector("#page-course-view-buttons")) {
+/*
+function addButtonText(buttonId, text) {
+	var button = document.getElementById(buttonId);
+	button.innerHTML = text;
+  }
+  addButtonText("buttonsection-1", "UNIDAD 1");
+  addButtonText("buttonsection-2", "UNIDAD 2");
+  addButtonText("buttonsection-3", "UNIDAD 3");
+  addButtonText("buttonsection-4", "UNIDAD 4");
+  addButtonText("buttonsection-5", "UNIDAD 5");
+  addButtonText("buttonsection-6", "UNIDAD 6");
+*/
+       // Obtener todos los botones
+        var botones = document.querySelectorAll('[id^="buttonsection-"]');
+        // Iterar sobre cada botón
+        botones.forEach(function(boton) {
+            // Obtener el número del botón
+            var numeroBoton = boton.id.split('-')[1];
+            // Obtener el elemento li correspondiente
+            var elementoLi = document.getElementById('section-' + numeroBoton);
+            // Verificar si el elemento li existe y tiene el atributo aria-label
+            if (elementoLi && elementoLi.getAttribute('aria-label').trim() !== '') {
+                // Actualizar el innerHTML del botón con el contenido de aria-label
+                boton.innerHTML = elementoLi.getAttribute('aria-label');
+            }
+        });
+}
+</script>
+
+<!--Videogallery-->
+<script>
+
+const scrollElements = document.querySelectorAll(".scroll");
+
+scrollElements.forEach((scroll) => {
+  var isDown = false;
+  var scrollX;
+  var scrollLeft;
+
+// Mouse Up Function
+scroll.addEventListener("mouseup", () => {
+	isDown = false;
+	scroll.classList.remove("active");
+});
+
+// Mouse Leave Function
+scroll.addEventListener("mouseleave", () => {
+	isDown = false;
+	scroll.classList.remove("active");
+});
+
+// Mouse Down Function
+scroll.addEventListener("mousedown", (e) => {
+	e.preventDefault();
+	isDown = true;
+	scroll.classList.add("active");
+	scrollX = e.pageX - scroll.offsetLeft;
+	scrollLeft = scroll.scrollLeft;
+});
+
+// Mouse Move Function
+scroll.addEventListener("mousemove", (e) => {
+	if (!isDown) return;
+	e.preventDefault();
+	var element = e.pageX - scroll.offsetLeft;
+	var scrolling = (element - scrollX) * 2;
+	scroll.scrollLeft = scrollLeft - scrolling;
+});
+});
+
+
+
+
+const sliderContainer = document.getElementById("slider-container");
+const scrollDistance = 200; 
+const sliderContainers = document.querySelectorAll(".main-gallery .scroll");
+const arrows = document.querySelectorAll(".main-gallery .arrow");
+
+sliderContainers.forEach((sliderContainer, index) => {
+  const arrowLeft = arrows[index * 2];
+  const arrowRight = arrows[index * 2 + 1];
+
+  arrowLeft.addEventListener("click", () => {
+    sliderContainer.scrollBy({
+      left: -scrollDistance,
+      behavior: "smooth",
+    });
+  });
+
+  arrowRight.addEventListener("click", () => {
+    sliderContainer.scrollBy({
+      left: scrollDistance,
+      behavior: "smooth",
+    });
+  });
+
+  // Check if there is content to scroll
+  if (sliderContainer.scrollWidth <= sliderContainer.clientWidth) {
+    arrowLeft.disabled = true;
+    arrowRight.disabled = true;
+  }
+
+  // Update the arrows' disabled state when the container is scrolled
+  sliderContainer.addEventListener("scroll", () => {
+
+    if (sliderContainer.scrollLeft === 0) {
+      arrowLeft.classList.add('disabled');
+    } else {
+      arrowLeft.classList.remove('disabled');
+    }
+
+    if (sliderContainer.scrollLeft + sliderContainer.clientWidth >= sliderContainer.scrollWidth) {
+       arrowRight.classList.add('disabled');
+    } else {
+     arrowRight.classList.remove('disabled');
+    }
+  });
+});
+
+
+</script>
+
+<script>
+if (document.querySelector("body#page-login-logout")) {
+    var skipclick = new URLSearchParams(window.location.search).get('normal');
+    if (!skipclick && document.querySelector(".singlebutton button")) {
+        document.querySelector(".singlebutton button").click();
+    }
+}
+</script>
+
+<script>
+    /* GENERACIÓN AUTOMÁTICA DE AULAS CERO */
+    var categoria = 0;
+    var curso = 0;
+    const token = '9f8243e25f212a924b25f84cfeaa2742';
+    // Elemento HTML donde mostraremos los enlaces
+    var enlacesContainer = document.getElementById('enlaces-container');
+    const bodyTarget = document.querySelector('#page-course-view-topics:not(.category-117)');
+    const sectionCero = document.getElementById('section-0');
+    const editBody = document.querySelector('body.editing');
+
+    var body = document.body;
+    var classes = body.classList;
+    for (var i = 0; i < classes.length; i++) {
+        var className = classes[i];
+        if (className.startsWith('category-')) {
+            categoria = className.split('-')[1];
+            continue;
+        }
+        if (className.startsWith('course-')) {
+            curso = className.split('-')[1];
+            continue;
+        }
+    }
+    // reviso si ya existen boxes, si existen no hago nada
+    var boxes = null;
+    if (sectionCero) {
+        var boxes = sectionCero.querySelector('div.box');
+    }
+    if (categoria == 0 || curso == 0 || !bodyTarget || boxes) {
+        console.log('No cat o no course');
+    } else {
+        const summaryContainer = sectionCero ? sectionCero.querySelector('.summarytext') : null;
+
+        if (!enlacesContainer) {
+            var enlacesContainer = document.createElement('div');
+            enlacesContainer.id = 'enlaces-container';
+            if (summaryContainer) {
+                summaryContainer.appendChild(enlacesContainer);
+            }
+            // Adición de css y enlaces
+            if (summaryContainer && !editBody) {
+                summaryContainer.classList.add('description');
+                summaryContainer.style.marginLeft = '7%';
+                summaryContainer.style.setProperty('margin-left', '7%', 'important');
+            }
+            var btnGuide = summaryContainer ? summaryContainer.querySelector('a') : null;
+            if (btnGuide) {
+                btnGuide.classList.add('btn','btn-primary','px-4');
+            }
+        }
+        enlacesContainer.classList.add('row');
+        // URL del servicio web que devuelve un JSON (reemplaza con la URL real)
+        const serviceUrl = 
+            '/webservice/rest/server.php?' +
+            'wstoken='+token+'&wsfunction=core_course_get_courses_by_field&'+
+            'moodlewsrestformat=json&field=category&value=' + categoria;
+
+        var meses = [
+            'enero',
+            'febrero',
+            'marzo',
+            'abril',
+            'mayo',
+            'junio',
+            'julio',
+            'agosto',
+            'septiembre',
+            'octubre',
+            'noviembre',
+            'diciembre'
+        ];
+        
+        // Función para hacer la solicitud HTTP al servicio web
+        fetch(serviceUrl)
+            .then(
+                response => response.json()
+            )
+            .then(data => {
+                var numCourses = 0;
+                data.courses.sort(function(a, b) {
+                    return a.startdate - b.startdate;
+                });
+                data.courses.forEach(item => {
+                    var box = createBox(item, meses);              
+                    if (box) { enlacesContainer.appendChild(box); numCourses++; } ;
+                });
+                if (numCourses > 0) {
+                    const titleAsignaturas = document.createElement('h3');
+                    titleAsignaturas.textContent = 'Asignaturas';
+                    titleAsignaturas.classList.add('w-100', 'mt-4', 'pl-3');
+                    enlacesContainer.insertBefore(titleAsignaturas, enlacesContainer.firstChild);
+                }
+            })
+            .catch(error => {
+                console.error('Error al obtener datos del servicio web:', error);
+        });
+    }
+    function createBox(item, meses) {
+        if (item.id == curso || item.visible == 0 || item.startdate == 0) {
+            return null
+        }
+        var block = document.createElement('div');
+        block.classList.add('col-lg-6');
+        var subBlock = document.createElement('div');
+        subBlock.setAttribute('title', 'El curso aun no ha comenzado');
+        subBlock.classList.add('box');
+        var title = document.createElement('h6');
+        title.textContent = item.displayname;
+        var p = document.createElement('p');
+        p.classList.add('mt-3');
+        p.classList.add('mb-1');
+        var fechaActualTimestamp = Math.floor(Date.now() / 1000); // Obtiene el timestamp actual
+        if (item.startdate > 0 && item.startdate < fechaActualTimestamp) { // si ya ha comenzado //  && item.visible != 0
+            subBlock.setAttribute('data-link', 'https://lms.haz.institutortve.com/course/view.php?id=' + item.id);
+            subBlock.classList.add('active');
+            subBlock.setAttribute('title', 'Acceder a la Asignatura ' + item.displayname);
+            subBlock.addEventListener('click', function() {
+                var enlace = subBlock.getAttribute('data-link'); // Obtiene el valor del enlace personalizado
+                if (enlace) {
+                    window.location.href = enlace; // Abre el enlace en la ventana actual
+                }
+            });
+        }
+        // startdate
+        if (item.startdate > 0) {
+            var fechaStr = composeDate(item.startdate, 'inicio');
+            var i = document.createElement('i');
+            i.classList.add('fa');
+            i.classList.add('fa-calendar');
+            i.classList.add('mr-2');
+            p.appendChild(i);
+            p.appendChild(fechaStr);
+            subBlock.appendChild(title);
+            subBlock.appendChild(p);
+        }
+        // enddate
+        if (item.enddate > 0) {
+            var fechaStr = composeDate(item.enddate, 'fin');
+            var i = document.createElement('i');
+            i.classList.add('fa');
+            i.classList.add('fa-calendar');
+            i.classList.add('mr-2');
+            var palt = document.createElement('p');
+            palt.appendChild(i);
+            palt.appendChild(fechaStr);
+            subBlock.appendChild(palt);
+        }
+        block.appendChild(subBlock);
+        return block;
+    }
+
+    function composeDate(timestamp, type) {
+        var fecha = new Date(timestamp * 1000);
+        var dia = fecha.getDate();
+        var nombreMes = meses[fecha.getMonth()];
+        var fechaFormateada = dia + ' de ' + nombreMes;
+        var fechaStr = document.createTextNode('Fecha de ' + type + ': ' + dia + ' de ' + nombreMes);
+        return fechaStr;
+    }
+</script>
+<script>
+/* FIX HOME CARDS WITH NO IMG */
+console.log(document.body.id);
+if (document.body.id === 'page-site-index' || document.body.id === 'page-course-index-category') {
+    // Obtener todos los elementos con la clase .coursebox
+    const courseBoxElements = document.querySelectorAll('.coursebox');
+    var gradient = false;
+
+    // Iterar sobre cada elemento .coursebox
+    courseBoxElements.forEach(courseBox => {
+        // Obtener los elementos .info y .courseimage dentro de cada .coursebox
+        const infoElement = courseBox.querySelector('.info');
+        var courseImageDiv = courseBox.querySelector('.courseimage');
+        console.log('log');
+        if (!courseImageDiv) {
+            var gradient = true;
+            var courseImageDiv = document.createElement('div');
+            courseImageDiv.classList.add('courseimage', 'mb-3');
+            courseImageDiv.style.backgroundImage = 'linear-gradient(45deg, #000000, #cf7017)';
+            courseImageDiv.style.borderRadius = '23px';
+            var courseImageDivParent = courseBox.querySelector('.content');
+            courseImageDivParent.insertBefore(courseImageDiv, courseImageDivParent.firstChild);
+            // Mover el elemento .info justo después del elemento .courseimage
+            courseImageDiv.insertAdjacentElement('afterend', infoElement);
+            // move info to parent folder
+            courseBox.insertBefore(infoElement, courseImageDivParent);
+        }
+    });
+}
+</script>
+<script>
+/* CAROUSEL BG IMAGES */
+var slides = document.querySelectorAll("#page-site-index .carousel .carousel-slide");
+slides.forEach(function(slide) {
+    var img = slide.querySelector("img");
+    if (img) {
+        var imgUrl = img.src;
+        img.remove();
+        slide.style.backgroundImage = "url('" + imgUrl + "')";
+    }
+});
+</script>
+<style>
+/* NEW CAROUSEL STYLES */
+.carousel .carousel-slide {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .carousel-slide .slider-text { 
+    top: unset;
+    padding-top: 0;
+    transform: translateY(50px);
+}
+.carousel .carousel-slide .slider-text h1 {
+   font-size: 2.5rem!important; 
+}
+.carousel .carousel-slide .slider-text p {
+   font-size: 21px!important; 
+}
+@media only screen and (max-width: 600px) {
+    .carousel-inner-1 {
+        height: 55vh !important;
+    }
+    .slider-text {
+        *transform: translateY(100px)!important;
+        left: 8%;
+    }
+    .carousel .carousel-slide .slider-text h1 {
+        font-size: 1.5rem!important;
+    }
+    .carousel .carousel-slide .slider-text p {
+        font-size: 15px!important;
+        line-height: 20px;
+    }
+}
+
+  /* STYLES HOME IMAGES */
+  body .coursebox > .info > .coursename {
+    width: calc(100% - 40px);
+  }
+  body .coursebox > .info > .coursename a {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  body#page-course-index-category .coursebox .d-flex {
+    display: block !important;
+  }
+  body#page-course-index-category .coursebox .content .courseimage,
+  body#page-site-index .coursebox .content .courseimage {
+   height: 170px;
+  }
+  body#page-course-index-category .coursebox .content .courseimage > img,
+  body#page-site-index .coursebox .content .courseimage > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* STYLES COURSE CERO */
+  #page-course-view-topics:not(.category-117) .summarytext {
+    padding: 0 2em 2em;
+  }
+  #page-course-view-topics:not(.category-117) .box {
+      border-radius: 7px;
+      background-color: rgba(0,0,0,.3);
+      padding: 25px;
+      margin: 15px 0;
+      min-height: 160px;
+      background-size: cover!important;
+      background-repeat: no-repeat!important;
+      background-position: center!important
+  }
+
+  #page-course-view-topics:not(.category-117) .box.active:hover {
+      cursor: pointer;
+      outline: 2px solid #fff
+  }
+  #page-course-view-topics:not(.category-117) .box .vertical-line-list {
+      list-style: none!important;
+      padding: 0
+  }
+  body#page-course-editsection.editing .description {
+      color: #444;
+  }
+</style>
+<script>
+$('body#page-course-view-buttons:not(.editing) li.activity .activity-item').each(function( index ) {
+    var img_src = $( this ).find('.description-inner img').attr('src');
+    $( this ).css("background-image", 'url(' + img_src + ')');
+});
+</script>
+<script>
+   // REPLACE LOGO URL
+    const navbarBrand = document.querySelector('a.navbar-brand');
+    if (navbarBrand) {
+        navbarBrand.setAttribute('href', 'https://portal-yhbrwoi.pentec.dev');
+    } 
+</script>
