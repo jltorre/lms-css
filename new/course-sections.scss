@@ -88,7 +88,7 @@ body.format-buttons {
     #section-1 {
         ul.section.img-text {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 1rem;
             padding: 1px;
             list-style: none;
@@ -102,6 +102,11 @@ body.format-buttons {
                     margin: 0 !important;
                     height: 100%;
                     width: 100%;
+                    .course-description-item {
+                        .description-inner:after {
+                            z-index: auto;
+                        }
+                    }
                 }
                 .activity-item {
                     height: 100%;

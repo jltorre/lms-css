@@ -74,7 +74,7 @@ body.format-buttons #buttonsectioncontainer .buttonsection.sectionvisible, body.
 }
 body.format-buttons #section-1 ul.section.img-text {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
   padding: 1px;
   list-style: none;
@@ -92,6 +92,9 @@ body.format-buttons #section-1 ul.section.img-text li.activity .description {
   margin: 0 !important;
   height: 100%;
   width: 100%;
+}
+body.format-buttons #section-1 ul.section.img-text li.activity .description .course-description-item .description-inner:after {
+  z-index: auto;
 }
 body.format-buttons #section-1 ul.section.img-text li.activity .activity-item {
   height: 100%;
