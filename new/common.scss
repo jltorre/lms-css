@@ -10,6 +10,12 @@ body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#pag
 }
 /* COURSE PAGE */
 body.format-buttons {
+    #page.drawers .main-inner, #region-main{
+        background-color: var(--course-body-bg);
+        .description {
+            color: var(--text-color);
+        }
+    }
     .secondary-navigation {
         .navigation {
             padding-top: 1em;
@@ -46,9 +52,8 @@ body.format-buttons {
         width: 100% !important;
         float: left;
         .buttonsection {
-            border: 1px solid rgba(0, 0, 0, 0);
             height: 45px;
-            color: #fff;
+            color: var(--primary);
             border-radius: 6px !important;
             font-size: 16px;
             font-weight: bold;
@@ -56,14 +61,10 @@ body.format-buttons {
             padding: 12px 20px;
             margin-right: 30px;
             font-weight: bold !important;
-            &.sectionvisible {
-                background-color: unset !important;
-                border: 1px solid var(--primary) !important;
-            }
-            &:hover {
-                background-color: unset !important;
-                color: #fff;
-                border: 1px solid var(--primary) !important;
+            &.sectionvisible, &:hover  &:focus, &:active{
+                color: #495057;
+                border: 2px solid var(--primary) !important;
+                background-color: #f8f9fa !important;
             }
         }
     }
