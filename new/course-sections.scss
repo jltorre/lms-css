@@ -7,23 +7,31 @@ body.format-buttons {
     #page {
         #page-header {
             padding: 10em 3% 6em !important;
+            > div {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                width: 93%;
+                max-width: 1600px;
+            }
         }
         #page-content, .secondary-navigation {
-            margin: 0 3% 0;
+            width: 93%;
+            max-width: 1600px;
+            margin: auto !important;
             background: #fff !important;
             #region-main {
                 background: #fff !important;
             }
         }
         .secondary-navigation {
-            margin-top: -5em;   
+            margin-top: -5em !important;
             border-radius: 12px 12px 0 0;
             padding: 1rem 1.5rem;
             z-index: 10;
             position: relative;
         }
         #page-content {
-            margin-bottom: 2em;
+            margin-bottom: 2em !important;
             border-radius: 0 0 12px 12px;
             #section-0 {
                 .summary {
