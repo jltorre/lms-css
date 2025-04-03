@@ -8,13 +8,13 @@ body.format-buttons {
         #page-header {
             padding: 10em 0 6em !important;
             > div {
-                width: 93%;
+                width: 93% !important;
                 max-width: 1600px;
                 margin: auto;
             }
         }
         #page-content, .secondary-navigation {
-            width: 93%;
+            width: 93% !important;
             max-width: 1600px;
             margin: auto !important;
             background: #fff !important;

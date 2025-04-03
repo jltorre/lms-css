@@ -5,12 +5,12 @@ body.format-buttons #page #page-header {
   padding: 10em 0 6em !important;
 }
 body.format-buttons #page #page-header > div {
-  width: 93%;
+  width: 93% !important;
   max-width: 1600px;
   margin: auto;
 }
 body.format-buttons #page #page-content, body.format-buttons #page .secondary-navigation {
-  width: 93%;
+  width: 93% !important;
   max-width: 1600px;
   margin: auto !important;
   background: #fff !important;
