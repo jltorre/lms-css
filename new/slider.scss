@@ -50,12 +50,12 @@
       bottom: 0;
       width: 100%;
       color: var(--slide-text-color);
-      padding: 2em 6em 5em;
+      padding: 2em 0 5em;
       display: flex;
       justify-content: center;
       .overlay-content {
         max-width: 1200px;
-        width: 100%;
+        width: 90%;
       }
 
       h2 {
