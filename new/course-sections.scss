@@ -11,25 +11,24 @@ body.format-buttons {
                 color: var(--text-color);
             }
             .label-datasheet.container {
-                > row {
-                    > .col-lg-4 {
-                        flex: 2 1 0%;
+                > .row {
+                    .col-sm-12.col-lg-2.p-1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .action-buttons {
+                            a {
+                                margin: 7px 0 !important;
+                            }
+                        }
                     }
-                    > .col-lg-2 {
+                    > [class*="col-lg-"] {
                         flex: 1 1 0%;
+                        max-width: none !important;
+                        width: auto !important;
                     }
-                    > [class^="col-"] {
-                        min-width: 0;
-                    }
-                }
-            }
-            .col-sm-12.col-lg-2.p-1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                .action-buttons {
-                    a {
-                        margin: 7px 0 !important;
+                    > .col-lg-4 {
+                        flex: 2 1 0% !important;
                     }
                 }
             }
