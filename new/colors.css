@@ -4,6 +4,7 @@
   --input-color: #474747;
   --text-color: #1d2125;
   --default-gradient: linear-gradient(270deg, #F6A30B 5.55%, #ED6E00 50%);
+  --course-card-bg: linear-gradient(45deg, rgb(0, 0, 0), rgb(207, 112, 23));
   --header-bg: rgba(134, 0, 0, 1);
   --course-body-bg: #F1F7FC;
 }/*# sourceMappingURL=colors.css.map */

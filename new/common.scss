@@ -12,9 +12,6 @@ body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#pag
 body.format-buttons {
     #page.drawers .main-inner, #region-main{
         background-color: var(--course-body-bg);
-        .description {
-            color: var(--text-color);
-        }
     }
     .secondary-navigation {
         .navigation {
@@ -47,10 +44,28 @@ body.format-buttons {
             }
         }
     }
+    #section-0 {
+        .summary {
+            background: #fff;
+            padding: 1em;
+            border-radius: 12px;
+            .description {
+                color: var(--text-color);
+            }
+        }
+    }
+    #section-1 {
+        .description {
+            background-image: var(--course-card-bg);
+        }
+    }
     #buttonsectioncontainer {
         margin: 40px auto;
         width: 100% !important;
         float: left;
+        .divisorsection {
+            display: none;
+        }
         .buttonsection {
             height: 45px;
             color: var(--primary);
@@ -147,7 +162,7 @@ body#page-site-index {
         }
         .content {
             .courseimage {
-                background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(207, 112, 23));
+                background-image: var(--course-card-bg);
                 border-radius: 0 !important;
                 margin: 0 !important;
                 > img {

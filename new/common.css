@@ -14,9 +14,6 @@ body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#pag
 body.format-buttons #page.drawers .main-inner, body.format-buttons #region-main {
   background-color: var(--course-body-bg);
 }
-body.format-buttons #page.drawers .main-inner .description, body.format-buttons #region-main .description {
-  color: var(--text-color);
-}
 body.format-buttons .secondary-navigation .navigation {
   padding-top: 1em;
 }
@@ -38,10 +35,24 @@ body.format-buttons:not(.editing) li.activity .activity-item {
   overflow: hidden;
   background-size: cover !important;
 }
+body.format-buttons #section-0 .summary {
+  background: #fff;
+  padding: 1em;
+  border-radius: 12px;
+}
+body.format-buttons #section-0 .summary .description {
+  color: var(--text-color);
+}
+body.format-buttons #section-1 .description {
+  background-image: var(--course-card-bg);
+}
 body.format-buttons #buttonsectioncontainer {
   margin: 40px auto;
   width: 100% !important;
   float: left;
+}
+body.format-buttons #buttonsectioncontainer .divisorsection {
+  display: none;
 }
 body.format-buttons #buttonsectioncontainer .buttonsection {
   height: 45px;
@@ -134,7 +145,7 @@ body#page-site-index .coursebox .coursename a {
 }
 body#page-course-index-category .coursebox .content .courseimage,
 body#page-site-index .coursebox .content .courseimage {
-  background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(207, 112, 23));
+  background-image: var(--course-card-bg);
   border-radius: 0 !important;
   margin: 0 !important;
 }
