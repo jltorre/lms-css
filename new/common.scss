@@ -51,7 +51,9 @@ body.format-buttons {
         .summary {
             background: #fff;
             padding: 1em;
-            border-radius: 12px;
+            .vjs-poster {
+                border-radius: 12px;    
+            }
             .description {
                 color: var(--text-color);
             }
@@ -60,6 +62,7 @@ body.format-buttons {
     #section-1 {
         .description {
             background-image: var(--course-card-bg);
+            min-height: 160px;
         }
     }
     #buttonsectioncontainer {

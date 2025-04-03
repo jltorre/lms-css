@@ -43,6 +43,8 @@ body.format-buttons:not(.editing) li.activity .activity-item {
 body.format-buttons #section-0 .summary {
   background: #fff;
   padding: 1em;
+}
+body.format-buttons #section-0 .summary .vjs-poster {
   border-radius: 12px;
 }
 body.format-buttons #section-0 .summary .description {
@@ -50,6 +52,7 @@ body.format-buttons #section-0 .summary .description {
 }
 body.format-buttons #section-1 .description {
   background-image: var(--course-card-bg);
+  min-height: 160px;
 }
 body.format-buttons #buttonsectioncontainer {
   margin: 40px auto;
