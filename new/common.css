@@ -15,12 +15,15 @@ body.format-buttons #page.drawers .main-inner, body.format-buttons #region-main 
   background-color: var(--course-body-bg);
 }
 body.format-buttons .secondary-navigation .navigation {
-  padding-top: 1em;
+  padding-top: 1em !important;
 }
 @media (min-width: 768px) {
   body.format-buttons .secondary-navigation .navigation {
     padding: 0 calc(0.5rem + 5px);
   }
+}
+body.format-buttons .secondary-navigation .navigation .nav-tabs {
+  border: none !important;
 }
 body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
   height: 50px;
@@ -59,8 +62,16 @@ body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 {
 body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 .action-buttons a {
   margin: 7px 0 !important;
 }
-body.format-buttons #section-1 .activity-item {
+body.format-buttons #section-1 .activity-item[style*=undefined]::before {
   background-image: var(--course-card-bg);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
 }
 body.format-buttons #buttonsectioncontainer {
   margin: 40px auto;

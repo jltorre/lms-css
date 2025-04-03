@@ -15,11 +15,12 @@ body.format-buttons {
     }
     .secondary-navigation {
         .navigation {
-            padding-top: 1em;
+            padding-top: 1em !important;
             @media (min-width: 768px) {
                 padding: 0 calc(0.5rem + 5px);
             }
             .nav-tabs {
+                border: none !important;
                 li.nav-item {
                     .nav-link {
                         height: 50px;
@@ -71,8 +72,15 @@ body.format-buttons {
         }
     }
     #section-1 {
-        .activity-item  {
-            background-image: var(--course-card-bg);
+        .activity-item {
+            &[style*="undefined"]::before {
+                background-image: var(--course-card-bg);
+                content: '';
+                position: absolute;
+                width: 100%; height: 100%;
+                top: 0; left: 0; bottom: 0;
+                pointer-events: none;
+            }
         }
     }
     #buttonsectioncontainer {
