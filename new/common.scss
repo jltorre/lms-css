@@ -16,6 +16,9 @@ body.format-buttons {
     .secondary-navigation {
         .navigation {
             padding-top: 1em;
+            @media (min-width: 768px) {
+                padding: 0 calc(0.5rem + 5px);
+            }
             .nav-tabs {
                 li.nav-item {
                     .nav-link {

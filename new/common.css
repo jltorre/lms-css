@@ -17,6 +17,11 @@ body.format-buttons #page.drawers .main-inner, body.format-buttons #region-main 
 body.format-buttons .secondary-navigation .navigation {
   padding-top: 1em;
 }
+@media (min-width: 768px) {
+  body.format-buttons .secondary-navigation .navigation {
+    padding: 0 calc(0.5rem + 5px);
+  }
+}
 body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
   height: 50px;
   border-radius: 6px;
