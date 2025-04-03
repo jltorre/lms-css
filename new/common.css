@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5 {
 #page.drawers {
   padding-left: 4em !important;
   padding-right: 0;
+  height: 100% !important;
 }
 
 body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header {
