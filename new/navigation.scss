@@ -24,3 +24,14 @@ div#page-wrapper nav.navbar.fixed-top {
         }
     }
 }
+
+@media (min-width: 992px) {
+    .drawer.drawer-right {
+      top: 0;
+      padding-top: 100px;
+      height: calc(100vh);
+    }
+    #page.drawers.show-drawer-right {
+        padding-right: 0;
+    }
+}
