@@ -76,9 +76,14 @@ a {
 
 .btn-outline {
     border: 2px solid var(--primary);
+    margin: 7px 4px;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    &:hover, &:active, &:focus {
+        background: var(--default-gradient);
+        color: #fff;
+    }
 }
 .btn-primary {
     background: var(--default-gradient);
