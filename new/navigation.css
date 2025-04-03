@@ -38,4 +38,21 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
   #page.drawers.show-drawer-right {
     padding-right: 0;
   }
+}
+.drawer.drawer-left .drawercontent {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #000;
+}
+.drawer.drawer-left .drawercontent::-webkit-scrollbar {
+  width: 8px;
+}
+.drawer.drawer-left .drawercontent::-webkit-scrollbar-track {
+  background: #000;
+}
+.drawer.drawer-left .drawercontent::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.drawer.drawer-left .drawercontent::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
 }/*# sourceMappingURL=navigation.css.map */

@@ -1,6 +1,6 @@
 /* padding para evitar el solapamiento del menu lateral */
 #page.drawers {
-  padding-left: 4em;
+  padding-left: 4em !important;
 }
 
 /* elements */

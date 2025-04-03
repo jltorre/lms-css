@@ -35,3 +35,28 @@ div#page-wrapper nav.navbar.fixed-top {
         padding-right: 0;
     }
 }
+.drawer.drawer-left {
+    .drawercontent {
+        // Firefox
+        scrollbar-width: thin;
+        scrollbar-color: #ccc #000;
+      
+        // WebKit browsers (Chrome, Edge, etc.)
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+      
+        &::-webkit-scrollbar-track {
+            background: #000;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        
+            &:hover {
+                background-color: #aaa;
+            }
+        }
+    }
+}
