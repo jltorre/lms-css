@@ -72,16 +72,30 @@ body.format-buttons {
         }
     }
     #section-1 {
-        .activity-item {
-            &[style*="undefined"]::before {
-                background-image: var(--course-card-bg);
-                content: '';
-                position: absolute;
-                width: 100%; height: 100%;
-                top: 0; left: 0; bottom: 0;
-                pointer-events: none;
+        ul.section.img-text {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+            padding: 1px;
+            list-style: none;
+            li.activity {
+                width: 100%;
+                160px;
+                .description {
+                    margin: 0 !important;
+                }
+                .activity-item {
+                    &[style*="undefined"]::before {
+                        background-image: var(--course-card-bg);
+                        content: '';
+                        position: absolute;
+                        width: 100%; height: 100%;
+                        top: 0; left: 0; bottom: 0;
+                        pointer-events: none;
+                    }
+                }
             }
-        }
+        }        
     }
     #buttonsectioncontainer {
         margin: 40px auto;

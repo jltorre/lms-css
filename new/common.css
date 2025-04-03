@@ -62,7 +62,20 @@ body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 {
 body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 .action-buttons a {
   margin: 7px 0 !important;
 }
-body.format-buttons #section-1 .activity-item[style*=undefined]::before {
+body.format-buttons #section-1 ul.section.img-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1px;
+  list-style: none;
+}
+body.format-buttons #section-1 ul.section.img-text li.activity {
+  width: 100%;
+}
+body.format-buttons #section-1 ul.section.img-text li.activity .description {
+  margin: 0 !important;
+}
+body.format-buttons #section-1 ul.section.img-text li.activity .activity-item[style*=undefined]::before {
   background-image: var(--course-card-bg);
   content: "";
   position: absolute;
