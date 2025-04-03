@@ -141,4 +141,8 @@ body.format-buttons #page #page-content #section-1 ul.section.img-text li.activi
   left: 0;
   bottom: 0;
   pointer-events: none;
+}
+body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .activity-item:after {
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=course-sections.css.map */
