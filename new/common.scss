@@ -51,8 +51,9 @@ body.format-buttons {
         .summary {
             background: #fff;
             padding: 1em;
-            .vjs-poster {
-                border-radius: 12px;    
+            .video-js {
+                border-radius: 12px;
+                overflow: hidden;
             }
             .description {
                 color: var(--text-color);
@@ -63,16 +64,15 @@ body.format-buttons {
                 justify-content: space-between;
                 .action-buttons {
                     a {
-                        margin: 0 !important;
+                        margin: 7px 0 !important;
                     }
                 }
             }
         }
     }
     #section-1 {
-        .description {
+        .activity-item  {
             background-image: var(--course-card-bg);
-            min-height: 160px;
         }
     }
     #buttonsectioncontainer {

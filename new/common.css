@@ -44,8 +44,9 @@ body.format-buttons #section-0 .summary {
   background: #fff;
   padding: 1em;
 }
-body.format-buttons #section-0 .summary .vjs-poster {
+body.format-buttons #section-0 .summary .video-js {
   border-radius: 12px;
+  overflow: hidden;
 }
 body.format-buttons #section-0 .summary .description {
   color: var(--text-color);
@@ -56,11 +57,10 @@ body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 {
   justify-content: space-between;
 }
 body.format-buttons #section-0 .summary .col-sm-12.col-lg-2.p-1 .action-buttons a {
-  margin: 0 !important;
+  margin: 7px 0 !important;
 }
-body.format-buttons #section-1 .description {
+body.format-buttons #section-1 .activity-item {
   background-image: var(--course-card-bg);
-  min-height: 160px;
 }
 body.format-buttons #buttonsectioncontainer {
   margin: 40px auto;
