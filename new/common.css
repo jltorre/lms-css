@@ -1,4 +1,12 @@
 /* padding para evitar el solapamiento del menu lateral */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "ITC Officina RTVE";
+}
+
 #page.drawers {
   padding-left: 4em !important;
   padding-right: 0;
