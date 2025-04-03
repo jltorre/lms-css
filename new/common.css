@@ -1,6 +1,24 @@
 /* padding para evitar el solapamiento del menu lateral */
 #page.drawers {
-  padding-left: 4em !important;
+  padding-left: 4em;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header {
+  background-image: url(https://haz.institutortve.com/wp-content/uploads/2024/04/bg.jpeg) !important;
+  .page-header-headings {
+    color: #fff;
+  }
+}
+body#page-course-view-buttons {
+  &:not(.editing) {
+    li.activity {
+      .activity-item {
+        aspect-ratio: 5/2.75;
+        border-radius: 10px;
+        overflow: hidden;
+        background-size: cover !important;
+      }
+    }
+  }
 }
 
 /* elements */
