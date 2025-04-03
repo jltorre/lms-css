@@ -1,72 +1,86 @@
-body.format-buttons .secondary-navigation {
-  background: #fff;
+body.format-buttons #page {
+  margin-top: 0 !important;
+}
+body.format-buttons #page #page-header {
+  padding: 10em 3% 6em !important;
+}
+body.format-buttons #page #page-content, body.format-buttons #page .secondary-navigation {
+  margin: 0 3% 0;
+  background: #fff !important;
+}
+body.format-buttons #page #page-content #region-main, body.format-buttons #page .secondary-navigation #region-main {
+  background: #fff !important;
+}
+body.format-buttons #page .secondary-navigation {
+  margin-top: -5em;
   border-radius: 12px 12px 0 0;
   padding: 1rem 1.5rem;
-  margin-left: 2rem;
-  margin: -30px 3% 0;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: relative;
 }
-body.format-buttons #section-0 .summary {
+body.format-buttons #page #page-content {
+  margin-bottom: 2em;
+  border-radius: 0 0 12px 12px;
+}
+body.format-buttons #page #page-content #section-0 .summary {
   background: #fff;
   padding: 1em;
 }
-body.format-buttons #section-0 .summary .video-js {
+body.format-buttons #page #page-content #section-0 .summary .video-js {
   border-radius: 12px;
   overflow: hidden;
 }
-body.format-buttons #section-0 .summary .description {
+body.format-buttons #page #page-content #section-0 .summary .description {
   color: var(--text-color);
 }
-body.format-buttons #section-0 .summary .label-datasheet.container > .row {
+body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row {
   display: flex;
   flex-wrap: wrap;
 }
-body.format-buttons #section-0 .summary .label-datasheet.container > .row > [class*=col-] {
+body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row > [class*=col-] {
   flex: 1 1 100%;
   max-width: 100%;
   width: 100%;
 }
 @media (min-width: 768px) {
-  body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
+  body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
     flex: 1 1 100%;
     max-width: 100%;
     width: 100%;
   }
-  body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-2 {
+  body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row > .col-lg-2 {
     flex: 1 1 50%;
     max-width: 50%;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  body.format-buttons #section-0 .summary .label-datasheet.container > .row > [class*=col-lg-] {
+  body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row > [class*=col-lg-] {
     flex: 1 1 0%;
     max-width: none !important;
     width: auto !important;
   }
-  body.format-buttons #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
+  body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row > .col-lg-4 {
     flex: 2 1 0% !important;
   }
-  body.format-buttons #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 {
+  body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  body.format-buttons #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 .action-buttons a {
+  body.format-buttons #page #page-content #section-0 .summary .label-datasheet.container > .row .col-sm-12.col-lg-2.p-1 .action-buttons a {
     margin: 7px 0 !important;
   }
 }
-body.format-buttons #buttonsectioncontainer {
+body.format-buttons #page #page-content #buttonsectioncontainer {
   margin: 40px auto;
   width: 100% !important;
   float: left;
 }
-body.format-buttons #buttonsectioncontainer .divisorsection {
+body.format-buttons #page #page-content #buttonsectioncontainer .divisorsection {
   display: none;
 }
-body.format-buttons #buttonsectioncontainer .buttonsection {
+body.format-buttons #page #page-content #buttonsectioncontainer .buttonsection {
   height: 45px;
   color: var(--primary);
   border-radius: 6px !important;
@@ -77,40 +91,40 @@ body.format-buttons #buttonsectioncontainer .buttonsection {
   margin-right: 30px;
   font-weight: bold !important;
 }
-body.format-buttons #buttonsectioncontainer .buttonsection.sectionvisible, body.format-buttons #buttonsectioncontainer .buttonsection:hover body.format-buttons #buttonsectioncontainer .buttonsection:focus, body.format-buttons #buttonsectioncontainer .buttonsection:active {
+body.format-buttons #page #page-content #buttonsectioncontainer .buttonsection.sectionvisible, body.format-buttons #page #page-content #buttonsectioncontainer .buttonsection:hover body.format-buttons #page #page-content #buttonsectioncontainer .buttonsection:focus, body.format-buttons #page #page-content #buttonsectioncontainer .buttonsection:active {
   color: #495057;
   border: 2px solid var(--primary) !important;
   background-color: #f8f9fa !important;
 }
-body.format-buttons #section-1 ul.section.img-text {
+body.format-buttons #page #page-content #section-1 ul.section.img-text {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
   padding: 1px;
   list-style: none;
 }
-body.format-buttons #section-1 ul.section.img-text li.activity {
+body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity {
   width: 100%;
   height: 160px;
 }
 @media screen and (max-width: 768px) {
-  body.format-buttons #section-1 ul.section.img-text li.activity {
+  body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity {
     height: 245;
   }
 }
-body.format-buttons #section-1 ul.section.img-text li.activity .description {
+body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .description {
   margin: 0 !important;
   height: 100%;
   width: 100%;
 }
-body.format-buttons #section-1 ul.section.img-text li.activity .description .course-description-item .description-inner:after {
+body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .description .course-description-item .description-inner:after {
   z-index: auto;
 }
-body.format-buttons #section-1 ul.section.img-text li.activity .activity-item {
+body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .activity-item {
   height: 100%;
   width: 100%;
 }
-body.format-buttons #section-1 ul.section.img-text li.activity .activity-item[style*=undefined]::before {
+body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .activity-item[style*=undefined]::before {
   background-image: var(--course-card-bg);
   content: "";
   position: absolute;
