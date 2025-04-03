@@ -1,0 +1,110 @@
+:root {
+    --slide-overlay-bg: rgba(0, 0, 0, 0.5);
+    --slide-text-color: #ffffff;
+    --slide-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    --slide-height: 500px;
+    --slide-indicator-bg: transparent;
+    --slide-indicator-border: #fff;
+    --slide-indicator-active-bg: #fff;
+    --slide-indicator-size-w: 20px;
+    --slide-indicator-size-h: 10px;
+    --slide-indicator-gap: 10px;
+    --slide-indicator-radius: 999px;
+}
+
+/* FIX top white line */
+#page-site-index {
+  #page-wrapper {
+    margin-top: -1px;
+  }
+}
+
+.custom-carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: var(--slide-shadow);
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: var(--slide-height);
+    background-size: cover;
+    background-position: center;
+    display: none;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+
+    &.active {
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: var(--slide-text-color);
+      padding: 2em 6em 5em;
+      display: flex;
+      justify-content: center;
+      .overlay-content {
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      h2 {
+        margin: 0 0 0.5rem;
+        font-size: 2rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .slide-indicators {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: var(--slide-indicator-gap);
+  
+      button {
+          width: var(--slide-indicator-size-w);
+          height: var(--slide-indicator-size-h);
+          background: var(--slide-indicator-bg);
+          border: 2px solid var(--slide-indicator-border);
+          border-radius: var(--slide-indicator-radius);
+          cursor: pointer;
+          transition: background 0.3s ease;
+          padding: 0;
+      
+          &.active {
+              background: var(--slide-indicator-active-bg);
+          }
+      }
+  }
+}
+
+/* HIDE TOP MARGINS FOR TRANSPARENT HEADER */
+.topics.frontpage {
+    #section-1 {
+        padding-top: 0;
+        [data-for="sectioninfo"].my-3 {
+            margin-top: 0 !important;
+        }
+    }
+}
+  
+/* current carousel */
+#page-site-index .carousel:not(.custom-carousel) {
+    display: none;
+}

@@ -1,0 +1,88 @@
+/* padding para evitar el solapamiento del menu lateral */
+#page.drawers {
+    padding-left: 4em;
+}
+/* elements */
+a {
+    color: var(--primary);
+}
+/* end elements */
+/* forms */
+.form-control {
+    background-color: var(--input-bg);
+    color: var(--input-color);
+    font-family: Roboto, sans-serif;
+    border: 0 none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    &:focus {
+        background-color: var(--input-bg);
+        border-color: var(--primary);
+        box-shadow: 0 0 0 .2rem rgba(0, 0, 0, .5);
+    }
+}
+/* end forms */
+/* buttons */
+.btn {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 0 none;
+    text-transform: uppercase;
+    padding: 10px 34px;
+}
+.btn-primary {
+    background: var(--default-gradient);
+}
+.input-group {
+    > .input-group-append {
+        .btn {
+            padding: 5px 12px;
+        }
+    }
+}
+/* end buttons */
+body#page-site-index {
+    #frontpage-course-list {
+        max-width: 1200px;
+        margin: 2em auto;
+        .frontpage-course-list-enrolled {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 1rem;
+        }
+    }
+}
+body#page-course-index-category, 
+body#page-site-index {
+    .coursebox {
+        .coursename {
+            a {
+                color: #fff;
+            }
+        }
+        .content {
+            .courseimage {
+                background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(207, 112, 23));
+                border-radius: 0 !important;
+                margin: 0 !important;
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    max-width: 100%;
+                    max-height: unset;
+                }
+                &:after {
+                    border-radius: 0 !important;
+                }
+            }
+        }
+    }
+    .paging.paging-morelink {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+}

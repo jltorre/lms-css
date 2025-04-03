@@ -1,0 +1,26 @@
+div#page-wrapper nav.navbar.fixed-top {
+    background: var(--header-bg) !important;
+    &.header-transparent {
+        background: transparent !important;
+        transition: background 0.3s ease-in-out;
+    }
+    .primary-navigation .navigation {
+        height: 100px;
+        li.nav-item {
+            padding: 20px;
+            a {
+                color: #fff;
+            }        
+        }
+    }
+    .navbar-nav {
+        .editmode-switch-form,
+        .nav-link, 
+        .usermenu {
+            color: #fff;
+            a.dropdown-toggle, .login, .login a {
+                color: #fff;
+            }
+        }
+    }
+}

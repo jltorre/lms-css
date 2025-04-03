@@ -1,0 +1,10 @@
+.drawer.drawer-left.drawer-primary {
+    z-index: 1050;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    .list-group .list-group-item {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,30 @@
+div#page-wrapper nav.navbar.fixed-top {
+  background: var(--header-bg) !important;
+}
+div#page-wrapper nav.navbar.fixed-top.header-transparent {
+  background: transparent !important;
+  transition: background 0.3s ease-in-out;
+}
+div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation {
+  height: 100px;
+}
+div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item {
+  padding: 20px;
+}
+div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item a {
+  color: #fff;
+}
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .editmode-switch-form,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .nav-link,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu {
+  color: #fff;
+}
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .editmode-switch-form a.dropdown-toggle, div#page-wrapper nav.navbar.fixed-top .navbar-nav .editmode-switch-form .login, div#page-wrapper nav.navbar.fixed-top .navbar-nav .editmode-switch-form .login a,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .nav-link a.dropdown-toggle,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .nav-link .login,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .nav-link .login a,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu a.dropdown-toggle,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login,
+div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
+  color: #fff;
+}/*# sourceMappingURL=navigation.css.map */
