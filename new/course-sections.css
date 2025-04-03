@@ -1,4 +1,4 @@
-body.format-buttons #page {
+body.format-buttons:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page {
   margin-top: 0 !important;
 }
 body.format-buttons #page #page-header {
