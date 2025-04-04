@@ -1,5 +1,10 @@
 #page-login-index {
-    .login-container {
-        background-color: #fff;
+    #page {
+        background: var(--login-img-bg) 50% 50% no-repeat !important;
+        background-size: cover !important;
+        margin: 0 !important;
+        .login-container {
+            background-color: #fff;
+        }
     }
 }

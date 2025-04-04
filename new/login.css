@@ -1,3 +1,8 @@
-#page-login-index .login-container {
+#page-login-index #page {
+  background: var(--login-img-bg) 50% 50% no-repeat !important;
+  background-size: cover !important;
+  margin: 0 !important;
+}
+#page-login-index #page .login-container {
   background-color: #fff;
 }/*# sourceMappingURL=login.css.map */

@@ -113,11 +113,6 @@ a {
 }
 
 /* end buttons */
-body#page-site-index #page {
-  background: var(--login-img-bg) 50% 50% no-repeat !important;
-  background-size: cover !important;
-  margin: 0 !important;
-}
 body#page-site-index #frontpage-course-list {
   max-width: 1200px;
   width: 90%;
