@@ -29,7 +29,7 @@ div#page-wrapper nav.navbar.fixed-top {
     .navigation {
         padding-top: 1em !important;
         @media (min-width: 768px) {
-            padding: 0 calc(0.5rem + 5px);
+            padding: 0 !important;
         }
         .nav-tabs {
             border: none !important;

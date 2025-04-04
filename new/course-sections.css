@@ -3,7 +3,7 @@ body.format-buttons #page #page-content {
 }
 body.format-buttons #page #page-content #section-0 .summary {
   background: #fff;
-  padding: 1em;
+  padding: 1em 0;
 }
 body.format-buttons #page #page-content #section-0 .summary .video-js {
   border-radius: 12px;

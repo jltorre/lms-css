@@ -34,7 +34,7 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
 }
 @media (min-width: 768px) {
   .secondary-navigation .navigation {
-    padding: 0 calc(0.5rem + 5px);
+    padding: 0 !important;
   }
 }
 .secondary-navigation .navigation .nav-tabs {
