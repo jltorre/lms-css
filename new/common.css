@@ -21,7 +21,7 @@ body.format-buttons:not(.editing) li.activity .activity-item {
   background-size: cover !important;
 }
 
-body:not(#page-calendar-view):not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page.drawers .main-inner, body:not(#page-calendar-view):not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #region-main {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page.drawers .main-inner, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #region-main {
   background-color: var(--course-body-bg);
   padding-bottom: 2em;
 }

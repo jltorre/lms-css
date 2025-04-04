@@ -1,13 +1,6 @@
 #page-calendar-view { 
     #page {
-        margin-top: 0 !important;
         #page-header {
-            background-image: var(--header-img-bg-calendar) !important;
-            height: auto !important;
-            padding: 10em 0 6em !important;
-            .page-header-headings {
-                color: #fff;
-            }
             .w-100:before {
                 display: none;
             }
@@ -20,6 +13,9 @@
             padding: 15px !important;
             z-index: 10;
             position: relative;
+        }
+        .main-inner {
+            background-color: var(--course-body-bg);
         }
     }
 }
