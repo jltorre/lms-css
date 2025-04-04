@@ -21,7 +21,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
   max-width: 1600px;
   margin: auto !important;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header > div, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-content {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-content {
   margin: -5em auto 0 !important;
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-content {
