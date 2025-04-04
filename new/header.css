@@ -18,7 +18,6 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
   margin: auto !important;
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-content, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) .secondary-navigation {
-  padding: 10em 0 6em !important;
   background: #fff !important;
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-content #region-main, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) .secondary-navigation #region-main {
