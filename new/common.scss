@@ -108,16 +108,19 @@ a {
 }
 /* end buttons */
 body#page-site-index {
-    .course-content,
-    #frontpage-course-list {
-        max-width: 1200px;
-        width: 90%;
-        margin: 2em auto;
-        .frontpage-course-list-enrolled {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            grid-auto-rows: auto;
-            grid-gap: 1rem;
+    #region-main div[role="main"] {
+        > .course-content,
+        > #frontpage-course-list,
+        > .buttons {
+            max-width: 1200px;
+            width: 90%;
+            margin: 2em auto;
+            .frontpage-course-list-enrolled {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                grid-auto-rows: auto;
+                grid-gap: 1rem;
+            }
         }
     }
 }
