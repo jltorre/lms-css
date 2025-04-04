@@ -61,22 +61,22 @@ a {
 /* buttons */
 .btn, .btn-outline {
     font-family: Roboto, sans-serif;
-    font-size: 18px;
+    font-size: .9375rem;
     font-weight: 400;
     line-height: 20px;
     border: 0 none;
     border-radius: .5rem;
     text-transform: uppercase;
-    padding: 10px 34px;
+    padding: .5rem 1.5rem;
 }
 
-.btn-outline, .btn-outline-secondary {
+.btn-outline {
     border: 2px solid var(--primary);
     margin: 7px 4px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 10px;
+    padding: .5rem 1.5rem;
     text-align: center;
     white-space: normal !important;
     &:hover, &:active, &:focus {
@@ -85,8 +85,9 @@ a {
         text-decoration: none;
     }
 }
-.btn-outline-secondary { 
-    border-color: var(--border-color-secondary);
+.btn-outline-secondary {
+    border: 1px solid var(--border-color-secondary);
+    color: var(--input-color);
     &:hover, &:active, &:focus {
         color: var(--input-color);
         background-color: var(--course-color-secondary);
