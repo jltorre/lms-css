@@ -36,7 +36,7 @@
 
     if (!isHome || !isCustomCSS) return;
   
-    const container = document.querySelector('div.course-description-item .description-inner > div');
+    const container = document.querySelector('div#region-main-box #region-main div.course-content');
     if (!container) return;
   
     const slides = [

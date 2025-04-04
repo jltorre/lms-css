@@ -102,14 +102,14 @@ a {
 }
 
 /* end buttons */
-body#page-site-index #region-main div[role=main] > .course-content,
+body#page-site-index #region-main div[role=main] > .course-content .sitetopic,
 body#page-site-index #region-main div[role=main] > #frontpage-course-list,
 body#page-site-index #region-main div[role=main] > .buttons {
   max-width: 1200px;
   width: 90%;
   margin: 2em auto;
 }
-body#page-site-index #region-main div[role=main] > .course-content .frontpage-course-list-enrolled,
+body#page-site-index #region-main div[role=main] > .course-content .sitetopic .frontpage-course-list-enrolled,
 body#page-site-index #region-main div[role=main] > #frontpage-course-list .frontpage-course-list-enrolled,
 body#page-site-index #region-main div[role=main] > .buttons .frontpage-course-list-enrolled {
   display: grid;
