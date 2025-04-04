@@ -1,5 +1,4 @@
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles){
-    /* HEADER TRANSPARENT */
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) {    /* HEADER TRANSPARENT */
     #page {
         margin-top: 0 !important;
         #page-header {
@@ -12,20 +11,17 @@ body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#pag
     }
 
     /* NAVIGATION ON TOP HEADER */
-    #page-content, .secondary-navigation {
+    #page-header > div, #page-content, .secondary-navigation {
         width: 93% !important;
         max-width: 1600px;
         margin: auto !important;
+    }
+    #page-content, .secondary-navigation {
         padding: 10em 0 6em !important;
         background: #fff !important;
         #region-main {
             background: #fff !important;
         }
-    }
-    #header > div {
-        width: 93% !important;
-        max-width: 1600px;
-        margin: auto;
     }
     .secondary-navigation {
         margin-top: -5em !important;
