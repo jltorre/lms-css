@@ -13,39 +13,9 @@ h1, h2, h3, h4, h5 {
   height: 100% !important;
 }
 
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header {
-  background-image: url(https://haz.institutortve.com/wp-content/uploads/2024/04/bg.jpeg) !important;
-}
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header .page-header-headings {
-  color: #fff;
-}
-
 /* COURSE PAGE */
 body.format-buttons #page.drawers .main-inner, body.format-buttons #region-main {
   background-color: var(--course-body-bg);
-}
-body.format-buttons .secondary-navigation .navigation {
-  padding-top: 1em !important;
-}
-@media (min-width: 768px) {
-  body.format-buttons .secondary-navigation .navigation {
-    padding: 0 calc(0.5rem + 5px);
-  }
-}
-body.format-buttons .secondary-navigation .navigation .nav-tabs {
-  border: none !important;
-}
-body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
-  height: 50px;
-  border-radius: 6px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  padding: 20px;
-}
-body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link.active, body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:hover, body.format-buttons .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:focus {
-  border: 2px solid var(--primary) !important;
-  background-color: #f8f9fa !important;
 }
 body.format-buttons:not(.editing) li.activity .activity-item {
   aspect-ratio: 5/2.75;

@@ -10,41 +10,11 @@ h1, h2, h3, h4, h5 {
     padding-right: 0;
     height: 100% !important;
 }
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #topofscroll #page-header {
-    background-image: url(https://haz.institutortve.com/wp-content/uploads/2024/04/bg.jpeg) !important;
-    .page-header-headings {
-      color: #fff;
-    }
-}
+
 /* COURSE PAGE */
 body.format-buttons {
     #page.drawers .main-inner, #region-main{
         background-color: var(--course-body-bg);
-    }
-    .secondary-navigation {
-        .navigation {
-            padding-top: 1em !important;
-            @media (min-width: 768px) {
-                padding: 0 calc(0.5rem + 5px);
-            }
-            .nav-tabs {
-                border: none !important;
-                li.nav-item {
-                    .nav-link {
-                        height: 50px;
-                        border-radius: 6px;
-                        font-size: 20px;
-                        font-weight: bold;
-                        margin: 0;
-                        padding: 20px;
-                        &.active, &:hover, &:focus {
-                            border: 2px solid var(--primary) !important;
-                            background-color: #f8f9fa !important;
-                        }
-                    }
-                }
-            }
-        }
     }
     &:not(.editing) {
         li.activity {

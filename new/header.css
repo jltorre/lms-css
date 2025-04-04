@@ -1,0 +1,59 @@
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) {
+  /* NAVIGATION ON TOP HEADER */
+  /* END NAVIGATION ON TOP HEADER */
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-header {
+  padding: 10em 0 6em !important;
+  background-image: var(--header-img-bg) !important;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-header .page-header-headings {
+  color: #fff;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-content, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation {
+  width: 93% !important;
+  max-width: 1600px;
+  margin: auto !important;
+  padding: 10em 0 6em !important;
+  background: #fff !important;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-content #region-main, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation #region-main {
+  background: #fff !important;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) > div {
+  width: 93% !important;
+  max-width: 1600px;
+  margin: auto;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation {
+  margin-top: -5em !important;
+  border-radius: 12px 12px 0 0;
+  padding: 1rem 1.5rem;
+  z-index: 10;
+  position: relative;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-content {
+  border-radius: 0 0 12px 12px;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation {
+  padding-top: 1em !important;
+}
+@media (min-width: 768px) {
+  body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation {
+    padding: 0 calc(0.5rem + 5px);
+  }
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs {
+  border: none !important;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
+  height: 50px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link.active, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:hover, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:focus {
+  border: 2px solid var(--primary) !important;
+  background-color: #f8f9fa !important;
+}/*# sourceMappingURL=header.css.map */

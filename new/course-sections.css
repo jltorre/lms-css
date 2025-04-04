@@ -1,33 +1,8 @@
 body.format-buttons:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page {
   margin-top: 0 !important;
 }
-body.format-buttons #page #page-header {
-  padding: 10em 0 6em !important;
-}
-body.format-buttons #page #page-header > div {
-  width: 93% !important;
-  max-width: 1600px;
-  margin: auto;
-}
-body.format-buttons #page #page-content, body.format-buttons #page .secondary-navigation {
-  width: 93% !important;
-  max-width: 1600px;
-  margin: auto !important;
-  background: #fff !important;
-}
-body.format-buttons #page #page-content #region-main, body.format-buttons #page .secondary-navigation #region-main {
-  background: #fff !important;
-}
-body.format-buttons #page .secondary-navigation {
-  margin-top: -5em !important;
-  border-radius: 12px 12px 0 0;
-  padding: 1rem 1.5rem;
-  z-index: 10;
-  position: relative;
-}
 body.format-buttons #page #page-content {
   margin-bottom: 2em !important;
-  border-radius: 0 0 12px 12px;
 }
 body.format-buttons #page #page-content #section-0 .summary {
   background: #fff;
