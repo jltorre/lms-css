@@ -1,6 +1,13 @@
+#page-calendar-view #page {
+  margin-top: 0 !important;
+}
 #page-calendar-view #page #page-header {
   background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
+  padding: 10em 0 6em !important;
+}
+#page-calendar-view #page #page-header .page-header-headings {
+  color: #fff;
 }
 #page-calendar-view #page #page-header .w-100:before {
   display: none;
