@@ -1,12 +1,16 @@
 body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) {
+  /* HEADER TRANSPARENT */
   /* NAVIGATION ON TOP HEADER */
   /* END NAVIGATION ON TOP HEADER */
 }
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-header {
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page {
+  margin-top: 0 !important;
+}
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page #page-header {
   padding: 10em 0 6em !important;
   background-image: var(--header-img-bg) !important;
 }
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-header .page-header-headings {
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page #page-header .page-header-headings {
   color: #fff;
 }
 body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-content, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation {
@@ -19,7 +23,7 @@ body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#pag
 body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-content #region-main, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation #region-main {
   background: #fff !important;
 }
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) > div {
+body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #header > div {
   width: 93% !important;
   max-width: 1600px;
   margin: auto;
