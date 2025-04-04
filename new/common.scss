@@ -70,7 +70,7 @@ a {
     padding: 10px 34px;
 }
 
-.btn-outline {
+.btn-outline, .btn-outline-secondary {
     border: 2px solid var(--primary);
     margin: 7px 4px;
     display: flex;
@@ -83,6 +83,14 @@ a {
         background: var(--default-gradient) !important;
         color: #fff !important;
         text-decoration: none;
+    }
+}
+.btn-outline-secondary { 
+    border-color: var(--border-color-secondary);
+    &:hover, &:active, &:focus {
+        color: var(--input-color);
+        background-color: var(--course-color-secondary);
+        border-color: var(--course-color-secondary);
     }
 }
 .btn-primary {

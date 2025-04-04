@@ -67,7 +67,7 @@ a {
   padding: 10px 34px;
 }
 
-.btn-outline {
+.btn-outline, .btn-outline-secondary {
   border: 2px solid var(--primary);
   margin: 7px 4px;
   display: flex;
@@ -77,10 +77,19 @@ a {
   text-align: center;
   white-space: normal !important;
 }
-.btn-outline:hover, .btn-outline:active, .btn-outline:focus {
+.btn-outline:hover, .btn-outline:active, .btn-outline:focus, .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
   background: var(--default-gradient) !important;
   color: #fff !important;
   text-decoration: none;
+}
+
+.btn-outline-secondary {
+  border-color: var(--border-color-secondary);
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
+  color: var(--input-color);
+  background-color: var(--course-color-secondary);
+  border-color: var(--course-color-secondary);
 }
 
 .btn-primary {
