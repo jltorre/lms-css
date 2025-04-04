@@ -30,7 +30,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
         padding-bottom: 2em;
     }
 }
-#page {
+#page:not(#page-site-index) {
     #page-content {
         padding: 0 15px !important;
         .course-content {
