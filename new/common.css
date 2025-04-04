@@ -26,10 +26,10 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
   padding-bottom: 2em;
 }
 
-#page:not(#page-site-index) #page-content {
+body:not(#page-site-index) #page #page-content {
   padding: 0 15px !important;
 }
-#page:not(#page-site-index) #page-content .course-content {
+body:not(#page-site-index) #page #page-content .course-content {
   padding: 0 !important;
 }
 
