@@ -89,8 +89,8 @@ a {
 }
 .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
   color: var(--input-color);
-  background-color: var(--course-color-secondary);
-  border-color: var(--course-color-secondary);
+  background-color: var(--bg-color-secondary);
+  border-color: var(--bg-color-secondary);
 }
 
 .btn-primary {

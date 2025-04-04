@@ -90,8 +90,8 @@ a {
     color: var(--input-color);
     &:hover, &:active, &:focus {
         color: var(--input-color);
-        background-color: var(--course-color-secondary);
-        border-color: var(--course-color-secondary);
+        background-color: var(--bg-color-secondary);
+        border-color: var(--bg-color-secondary);
     }
 }
 .btn-primary {
