@@ -102,11 +102,13 @@ a {
 }
 
 /* end buttons */
+body#page-site-index .course-content,
 body#page-site-index #frontpage-course-list {
   max-width: 1200px;
   width: 90%;
   margin: 2em auto;
 }
+body#page-site-index .course-content .frontpage-course-list-enrolled,
 body#page-site-index #frontpage-course-list .frontpage-course-list-enrolled {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
