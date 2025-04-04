@@ -1,12 +1,14 @@
 #page-calendar-view #page #page-header {
-  background: var(--header-img-bg-calendar) !important;
+  background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
 }
 #page-calendar-view #page #page-header .w-100:before {
   display: none;
 }
 #page-calendar-view #page #page-content {
-  margin-top: -5em !important;
+  width: 93% !important;
+  max-width: 1600px;
+  margin: -5em auto 0 !important;
   border-radius: 12px 12px 0 0;
   padding: 15px !important;
   z-index: 10;
