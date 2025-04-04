@@ -1,0 +1,18 @@
+#page-calendar-view { 
+    #page {
+        #page-header {
+            background: var(--header-img-bg-calendar) !important;
+            height: auto !important;
+            .w-100:before {
+                display: none;
+            }
+        }
+        #page-content {
+            margin-top: -5em !important;
+            border-radius: 12px 12px 0 0;
+            padding: 15px !important;
+            z-index: 10;
+            position: relative;
+        }
+    }
+}
