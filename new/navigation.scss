@@ -25,6 +25,32 @@ div#page-wrapper nav.navbar.fixed-top {
     }
 }
 
+.secondary-navigation {
+    .navigation {
+        padding-top: 1em !important;
+        @media (min-width: 768px) {
+            padding: 0 calc(0.5rem + 5px);
+        }
+        .nav-tabs {
+            border: none !important;
+            li.nav-item {
+                .nav-link {
+                    height: 50px;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 0;
+                    padding: 20px;
+                    &.active, &:hover, &:focus {
+                        border: 2px solid var(--primary) !important;
+                        background-color: #f8f9fa !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .drawer.drawer-right {
       top: 0;

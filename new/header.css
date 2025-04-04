@@ -33,27 +33,4 @@ body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#pag
 }
 body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) #page-content {
   border-radius: 0 0 12px 12px;
-}
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation {
-  padding-top: 1em !important;
-}
-@media (min-width: 768px) {
-  body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation {
-    padding: 0 calc(0.5rem + 5px);
-  }
-}
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs {
-  border: none !important;
-}
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
-  height: 50px;
-  border-radius: 6px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  padding: 20px;
-}
-body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link.active, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:hover, body:not(#page-site-index):not(#page-my-index):not(#page-calendar-view):not(#page-course-view-tiles) .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:focus {
-  border: 2px solid var(--primary) !important;
-  background-color: #f8f9fa !important;
 }/*# sourceMappingURL=header.css.map */
