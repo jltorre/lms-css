@@ -14,9 +14,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* COURSE PAGE */
-body.format-buttons #page.drawers .main-inner, body.format-buttons #region-main {
-  background-color: var(--course-body-bg);
-}
 body.format-buttons:not(.editing) li.activity .activity-item {
   aspect-ratio: 5/2.75;
   border-radius: 10px;

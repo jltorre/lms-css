@@ -32,4 +32,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-content {
   border-radius: 0 0 12px 12px;
+}
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page.drawers .main-inner, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #region-main {
+  background-color: var(--course-body-bg);
 }/*# sourceMappingURL=header.css.map */

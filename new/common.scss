@@ -13,9 +13,6 @@ h1, h2, h3, h4, h5 {
 
 /* COURSE PAGE */
 body.format-buttons {
-    #page.drawers .main-inner, #region-main{
-        background-color: var(--course-body-bg);
-    }
     &:not(.editing) {
         li.activity {
             .activity-item {
