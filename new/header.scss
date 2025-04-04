@@ -32,8 +32,5 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     #page-content {
         border-radius: 0 0 12px 12px;
     }
-    #page.drawers .main-inner, #region-main {
-        background-color: var(--course-body-bg);
-    }
     /* END NAVIGATION ON TOP HEADER */
 }
