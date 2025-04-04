@@ -7,6 +7,11 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
             .page-header-headings {
                 color: #fff;
             }
+            .breadcrumb {
+                a {
+                    color: #fff !important;
+                }
+            }
         }
     }
     &#page-calendar-view {

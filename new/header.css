@@ -12,6 +12,9 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings {
   color: #fff;
 }
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb a {
+  color: #fff !important;
+}
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header {
   background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
