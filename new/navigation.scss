@@ -41,6 +41,7 @@ div#page-wrapper nav.navbar.fixed-top {
                     font-weight: bold;
                     margin: 0;
                     padding: 20px;
+                    border: 2px solid transparent;
                     &.active, &:hover, &:focus {
                         border: 2px solid var(--primary) !important;
                         background-color: #f8f9fa !important;

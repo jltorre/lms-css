@@ -47,6 +47,7 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
   font-weight: bold;
   margin: 0;
   padding: 20px;
+  border: 2px solid transparent;
 }
 .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link.active, .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:hover, .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:focus {
   border: 2px solid var(--primary) !important;
