@@ -56,3 +56,8 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     }
     /* END NAVIGATION ON TOP HEADER */
 }
+.add-rating-link {
+    &:hover, &:focus, &:active {
+        color: var(--primary);
+    }
+}

@@ -46,4 +46,8 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password):not(#page-site-index) #page-content {
   border-radius: 0 0 12px 12px;
+}
+
+.add-rating-link:hover, .add-rating-link:focus, .add-rating-link:active {
+  color: var(--primary);
 }/*# sourceMappingURL=header.css.map */
