@@ -159,4 +159,12 @@ body#page-course-index-category .paging.paging-morelink,
 body#page-site-index .paging.paging-morelink {
   grid-column: 1/-1;
   width: 100%;
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.page-item .page-link {
+  color: var(--primary);
 }/*# sourceMappingURL=common.css.map */

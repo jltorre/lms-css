@@ -163,3 +163,15 @@ body#page-site-index {
         width: 100%;
     }
 }
+
+.page-item {
+    &.active {
+        .page-link {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+    }
+    .page-link {
+        color: var(--primary);
+    }
+}
