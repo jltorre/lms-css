@@ -87,3 +87,9 @@ div#page-wrapper nav.navbar.fixed-top {
         }
     }
 }
+
+.dropdown-item {
+    &:hover, &:focus {
+        background-color: var(--primary);
+    }
+}
