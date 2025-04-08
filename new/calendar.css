@@ -9,6 +9,7 @@
   padding: 15px !important;
   z-index: 10;
   position: relative;
+  overflow-x: auto;
 }
 #page-calendar-view #page .main-inner {
   background-color: var(--course-body-bg);

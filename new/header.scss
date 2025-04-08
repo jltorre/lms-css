@@ -27,6 +27,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
             width: 93% !important;
             max-width: 1600px;
             margin: auto !important;
+            overflow-x: auto;
         }
         &#page-calendar-view {
             #page-content {

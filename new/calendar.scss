@@ -13,6 +13,7 @@
             padding: 15px !important;
             z-index: 10;
             position: relative;
+            overflow-x: auto;
         }
         .main-inner {
             background-color: var(--course-body-bg);
