@@ -1,0 +1,7 @@
+body#page-mod-page-view div[id^=accordion] > .card {
+  margin-bottom: 1em;
+}
+body#page-mod-page-view div[id^=accordion] > .card .card-header {
+  border: none;
+  background-color: var(--course-body-bg);
+}/*# sourceMappingURL=accordion.css.map */

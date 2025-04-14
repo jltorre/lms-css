@@ -97,6 +97,13 @@ a {
   background: var(--default-gradient);
 }
 
+.btn-link {
+  color: var(--primary);
+}
+.btn-link:hover, .btn-link:active, .btn-link:focus {
+  color: var(--primary);
+}
+
 .input-group > .input-group-append .btn {
   padding: 5px 12px;
 }

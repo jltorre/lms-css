@@ -1,0 +1,11 @@
+body#page-mod-page-view {
+    div[id^="accordion"] {
+        > .card {
+            margin-bottom: 1em;
+            .card-header {
+                border: none;
+                background-color: var(--course-body-bg);
+            }
+        }
+    }
+}

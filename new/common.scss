@@ -99,6 +99,13 @@ a {
 .btn-primary {
     background: var(--default-gradient);
 }
+
+.btn-link {
+    color: var(--primary);
+    &:hover, &:active, &:focus {
+        color: var(--primary);
+    }
+}
 .input-group {
     > .input-group-append {
         .btn {
