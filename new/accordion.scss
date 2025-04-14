@@ -5,6 +5,12 @@ body#page-mod-page-view {
             .card-header {
                 border: none;
                 background-color: var(--course-body-bg);
+                .btn-link {
+                    color: var(--text-color);
+                    &:hover, &:active, &:focus {
+                        box-shadow: none;
+                    }
+                }
             }
         }
     }

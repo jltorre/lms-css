@@ -4,4 +4,10 @@ body#page-mod-page-view div[id^=accordion] > .card {
 body#page-mod-page-view div[id^=accordion] > .card .card-header {
   border: none;
   background-color: var(--course-body-bg);
+}
+body#page-mod-page-view div[id^=accordion] > .card .card-header .btn-link {
+  color: var(--text-color);
+}
+body#page-mod-page-view div[id^=accordion] > .card .card-header .btn-link:hover, body#page-mod-page-view div[id^=accordion] > .card .card-header .btn-link:active, body#page-mod-page-view div[id^=accordion] > .card .card-header .btn-link:focus {
+  box-shadow: none;
 }/*# sourceMappingURL=accordion.css.map */
