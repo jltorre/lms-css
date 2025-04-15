@@ -13,4 +13,21 @@
 }
 #page-calendar-view #page .main-inner {
   background-color: var(--course-body-bg);
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  .block_calendar_month .maincalendar > div > .header {
+    padding: 0 !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+  .block_calendar_month .maincalendar > div > .header > * {
+    margin: 0 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+.block_calendar_month .maincalendar td.today .day-number-circle {
+  background-color: var(--primary);
 }/*# sourceMappingURL=calendar.css.map */
