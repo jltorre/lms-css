@@ -95,10 +95,6 @@ div#page-wrapper nav.navbar.fixed-top {
 
 .secondary-navigation {
     .navigation {
-        padding-top: 1em !important;
-        @media (min-width: 768px) {
-            padding: 0 !important;
-        }
         .nav-tabs {
             border: none !important;
             li.nav-item {
@@ -113,6 +109,10 @@ div#page-wrapper nav.navbar.fixed-top {
                     &.active, &:hover, &:focus {
                         border: 2px solid var(--primary) !important;
                         background-color: #f8f9fa !important;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 16px;
+                        padding: 10px;                        
                     }
                 }
             }

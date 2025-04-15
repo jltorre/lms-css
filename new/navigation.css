@@ -95,14 +95,6 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
   color: #fff;
 }
 
-.secondary-navigation .navigation {
-  padding-top: 1em !important;
-}
-@media (min-width: 768px) {
-  .secondary-navigation .navigation {
-    padding: 0 !important;
-  }
-}
 .secondary-navigation .navigation .nav-tabs {
   border: none !important;
 }
@@ -118,6 +110,12 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
 .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link.active, .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:hover, .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link:focus {
   border: 2px solid var(--primary) !important;
   background-color: #f8f9fa !important;
+}
+@media screen and (max-width: 768px) {
+  .secondary-navigation .navigation .nav-tabs li.nav-item .nav-link {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 
 @media (min-width: 992px) {
