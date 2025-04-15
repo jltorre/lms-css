@@ -83,6 +83,17 @@
 .custom-carousel .slide-indicators button.active {
   background: var(--slide-indicator-active-bg);
 }
+@media screen and (max-width: 768px) {
+  .custom-carousel .slide .overlay {
+    max-height: calc(100% - 4em);
+  }
+  .custom-carousel .slide .overlay h2 {
+    font-size: 1.5rem;
+  }
+  .custom-carousel .slide .overlay p {
+    font-size: 1rem;
+  }
+}
 
 /* HIDE TOP MARGINS FOR TRANSPARENT HEADER */
 .topics.frontpage #section-1 {
