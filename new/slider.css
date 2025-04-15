@@ -85,7 +85,7 @@
 }
 @media screen and (max-width: 768px) {
   .custom-carousel .slide .overlay {
-    max-height: calc(100% - 4em);
+    max-height: calc(100% - 5em);
   }
   .custom-carousel .slide .overlay h2 {
     font-size: 1.5rem;
