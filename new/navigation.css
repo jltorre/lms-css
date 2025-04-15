@@ -15,6 +15,14 @@ div#page-wrapper nav.navbar.fixed-top .navbar-toggler {
 div#page-wrapper nav.navbar.fixed-top .navbar-brand {
   padding-left: 15px !important;
 }
+div#page-wrapper nav.navbar.fixed-top .navbar-brand .logo {
+  max-height: 48px;
+}
+@media screen and (max-width: 768px) {
+  div#page-wrapper nav.navbar.fixed-top .navbar-brand .logo {
+    max-height: 28px;
+  }
+}
 div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation {
   height: 100px;
 }
@@ -53,6 +61,14 @@ div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-ite
   div#page-wrapper nav.navbar.fixed-top .primary-navigation li.nav-item a.nav-link {
     height: auto;
     padding: 5px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  div#page-wrapper nav.navbar.fixed-top #usernavigation #user-menu-toggle {
+    padding: 0 10px;
+  }
+  div#page-wrapper nav.navbar.fixed-top #usernavigation .divider {
+    margin-right: 5px !important;
   }
 }
 div#page-wrapper nav.navbar.fixed-top.header-transparent {

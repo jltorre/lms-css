@@ -13,6 +13,12 @@ div#page-wrapper nav.navbar.fixed-top {
     }
     .navbar-brand {
         padding-left: 15px !important;
+        .logo {
+            max-height: 48px; 
+            @media screen and (max-width: 768px) {
+                max-height: 28px;
+            }        
+        }
     }
     .primary-navigation {
         .navigation {
@@ -53,6 +59,16 @@ div#page-wrapper nav.navbar.fixed-top {
                     height: auto;
                     padding: 5px !important;
                 }
+            }
+        }
+    }
+    #usernavigation {
+        @media screen and (max-width: 768px) {
+            #user-menu-toggle {
+                padding: 0 10px;
+            }
+            .divider {
+                margin-right: 5px !important;
             }
         }
     }
