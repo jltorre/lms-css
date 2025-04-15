@@ -52,6 +52,7 @@ div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-ite
   }
   div#page-wrapper nav.navbar.fixed-top .primary-navigation li.nav-item a.nav-link {
     height: auto;
+    padding: 5px !important;
   }
 }
 div#page-wrapper nav.navbar.fixed-top.header-transparent {
