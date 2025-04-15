@@ -1,9 +1,18 @@
 div#page-wrapper nav.navbar.fixed-top {
+  height: 100px;
+  padding-left: 0;
   background: var(--header-bg) !important;
 }
-div#page-wrapper nav.navbar.fixed-top.header-transparent {
-  background: transparent !important;
-  transition: background 0.3s ease-in-out;
+div#page-wrapper nav.navbar.fixed-top .navbar-toggler {
+  background: #000000;
+  padding: 40px 20px 0 !important;
+  margin: 0 !important;
+  border-radius: 0;
+  width: 60px;
+  max-width: 60px;
+}
+div#page-wrapper nav.navbar.fixed-top .navbar-brand {
+  padding-left: 15px !important;
 }
 div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation {
   height: 100px;
@@ -13,6 +22,44 @@ div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-ite
 }
 div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item a {
   color: #fff;
+}
+div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item ul.dropdown-menu li {
+  padding: 4px 20px;
+}
+div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item ul.dropdown-menu li a {
+  color: var(--text-color);
+}
+div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item ul.dropdown-menu li a:hover, div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item ul.dropdown-menu li a:focus, div#page-wrapper nav.navbar.fixed-top .primary-navigation .navigation li.nav-item ul.dropdown-menu li a:active {
+  background: transparent;
+  color: var(--primary);
+}
+@media screen and (max-width: 991px) {
+  div#page-wrapper nav.navbar.fixed-top .primary-navigation {
+    display: block !important;
+    background: var(--header-bg) !important;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 50px;
+    top: 70px;
+    width: 100% !important;
+    padding-left: 75px;
+  }
+  div#page-wrapper nav.navbar.fixed-top .primary-navigation li.nav-item {
+    padding: 10px !important;
+  }
+  div#page-wrapper nav.navbar.fixed-top .primary-navigation li.nav-item a.nav-link {
+    height: auto;
+  }
+}
+div#page-wrapper nav.navbar.fixed-top.header-transparent {
+  background: transparent !important;
+  transition: background 0.3s ease-in-out;
+}
+@media screen and (max-width: 991px) {
+  div#page-wrapper nav.navbar.fixed-top.header-transparent .primary-navigation {
+    background: transparent !important;
+  }
 }
 div#page-wrapper nav.navbar.fixed-top .navbar-nav .editmode-switch-form,
 div#page-wrapper nav.navbar.fixed-top .navbar-nav .nav-link,

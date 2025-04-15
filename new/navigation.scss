@@ -1,16 +1,65 @@
 div#page-wrapper nav.navbar.fixed-top {
+    height: 100px;
+    padding-left: 0;
     background: var(--header-bg) !important;
+    .navbar-toggler {
+        background: #000000;
+        padding: 40px 20px 0 !important;
+        margin: 0 !important;
+        border-radius: 0;
+        width: 60px;
+        max-width: 60px;
+    }
+    .navbar-brand {
+        padding-left: 15px !important;
+    }
+    .primary-navigation {
+        .navigation {
+            height: 100px;
+            li.nav-item {
+                padding: 20px;
+                a {
+                    color: #fff;
+                }
+                ul.dropdown-menu {
+                    li {
+                        padding: 4px 20px;
+                        a {
+                            color: var(--text-color);
+                            &:hover, &:focus, &:active {
+                                background: transparent;
+                                color: var(--primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 991px) {
+            display: block !important;
+            background: var(--header-bg) !important;
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            height: 50px;
+            top: 70px;
+            width: 100% !important;
+            padding-left: 75px;
+            li.nav-item {
+                padding: 10px !important;
+                a.nav-link {
+                    height: auto;
+                }
+            }
+        }
+    }
     &.header-transparent {
         background: transparent !important;
         transition: background 0.3s ease-in-out;
-    }
-    .primary-navigation .navigation {
-        height: 100px;
-        li.nav-item {
-            padding: 20px;
-            a {
-                color: #fff;
-            }        
+        @media screen and (max-width: 991px) {
+            .primary-navigation {
+                background:transparent !important;
+            }
         }
     }
     .navbar-nav {
