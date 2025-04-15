@@ -17,6 +17,17 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
                 a {
                     color: #fff !important;
                 }
+                @media screen and (max-width: 768px) {
+                    flex-wrap: wrap !important;
+                    a {
+                        display: inline-block;
+                        max-width: 100%;
+                        overflow-wrap: break-word;
+                        word-break: break-word;
+                        white-space: normal;
+                    }
+                    
+                }
             }
         }
     }

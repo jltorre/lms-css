@@ -24,6 +24,18 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb a {
   color: #fff !important;
 }
+@media screen and (max-width: 768px) {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb {
+    flex-wrap: wrap !important;
+  }
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb a {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
+}
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header {
   background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
