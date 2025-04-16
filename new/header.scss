@@ -10,10 +10,10 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
                     font-size: 2rem;
                 }
                 @media screen and (max-width: 768px) {
-                    padding: 0 1em;          
+                    padding: 0 .5rem;          
                     h1.h2 {
                         font-size: 1.5rem;
-                        margin-bottom: 0.5em;
+                        margin-top: 0.2em;
                     }
                 }
             }

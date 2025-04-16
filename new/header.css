@@ -18,11 +18,11 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 }
 @media screen and (max-width: 768px) {
   body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings {
-    padding: 0 1em;
+    padding: 0 0.5rem;
   }
   body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings h1.h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.5em;
+    margin-top: 0.2em;
   }
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb a {
