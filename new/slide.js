@@ -33,7 +33,14 @@
       updateHeaderTransparency();
       scrollContainer.addEventListener('scroll', updateHeaderTransparency);
     }
+    
+    /* NO SEC NAV */
+    var secondaryNav = document.querySelector("#topofscroll .secondary-navigation");
+    if (!secondaryNav) {
+        document.body.classList.add("no-secondary-nav");
+    }
 
+    /* SLIDES */
     if (!isHome || !isCustomCSS) return;
   
     const container = document.querySelector('div#region-main-box #region-main div.course-content');
@@ -116,6 +123,7 @@
   
     showSlide(0);
     startAutoSlide();
+    
 
-  })();
+})();
 

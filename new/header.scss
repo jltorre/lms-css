@@ -31,7 +31,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
             }
         }
     }
-    &#page-calendar-view {
+    &.no-secondary-nav {
         #page-header {
             background-image: var(--header-img-bg-calendar) !important;
             height: auto !important;

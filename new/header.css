@@ -36,7 +36,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     white-space: normal;
   }
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password).no-secondary-nav #page-header {
   background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
 }
