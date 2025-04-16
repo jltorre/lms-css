@@ -29,6 +29,16 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
                     
                 }
             }
+            #message-user-button {
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 0.5rem;
+                margin-left: 15px;
+                &:hover, &:focus, &:active {
+                    color: var(--primary);
+                    background-color: #fff;
+                }
+            }
         }
     }
     &#page-calendar-view {

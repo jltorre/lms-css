@@ -36,6 +36,16 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     white-space: normal;
   }
 }
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  margin-left: 15px;
+}
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button:hover, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button:focus, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button:active {
+  color: var(--primary);
+  background-color: #fff;
+}
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header {
   background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
