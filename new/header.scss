@@ -43,7 +43,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
         #page-header > div, #page-content, .secondary-navigation {
             width: 93% !important;
             max-width: 1600px;
-            margin: auto !important;
+            margin: auto;
             /* overflow-x: auto; */
             @media screen and (max-width: 768px) {
                 width: 98% !important;
