@@ -60,9 +60,12 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     height: 50px;
     font-size: 1rem;
   }
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header #message-user-button {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header .header-button-group {
     position: absolute;
     bottom: 0;
+  }
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header .header-button-group a {
+    margin-left: 0;
   }
 }
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header {

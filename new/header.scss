@@ -52,9 +52,12 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
                         height: 50px;
                         font-size: 1rem;
                     }
-                    #message-user-button {
+                    .header-button-group {
                         position: absolute;
                         bottom: 0;
+                        a {
+                            margin-left: 0;
+                        }
                     }
                     
                 }
