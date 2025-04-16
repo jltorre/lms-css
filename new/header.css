@@ -36,7 +36,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     white-space: normal;
   }
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password).no-secondary-nav #page-header {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-calendar-view #page-header {
   background-image: var(--header-img-bg-calendar) !important;
   height: auto !important;
 }
@@ -75,10 +75,10 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password):not(#page-site-index) #page-content {
   border-radius: 0 0 12px 12px;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-my-index #page-header .w-100:before {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password).no-secondary-nav #page-header .w-100:before {
   display: none;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-my-index #page-content {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password).no-secondary-nav #page-content {
   margin-top: -5em !important;
   border-radius: 12px !important;
   padding: 15px !important;

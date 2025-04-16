@@ -31,7 +31,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
             }
         }
     }
-    &.no-secondary-nav {
+    &#page-calendar-view {
         #page-header {
             background-image: var(--header-img-bg-calendar) !important;
             height: auto !important;
@@ -80,7 +80,7 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
 
 
     /* NO SECONDARY-NAV FIX */
-    &#page-my-index {
+    &.no-secondary-nav {
         #page-header {
             .w-100:before {
                 display: none;
