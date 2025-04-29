@@ -128,7 +128,10 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
         }
     }
     &#page-site-index {
-        padding: 0 !important;
+        #page-content {
+            margin-top: 0 !important;
+            padding: 0 !important;
+        }
     }
 }
 .add-rating-link {
