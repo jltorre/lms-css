@@ -106,6 +106,7 @@ body.format-buttons #page #page-content #section-1 ul.section.img-text li.activi
 }
 body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .description .course-description-item .description-inner:after {
   z-index: auto;
+  opacity: 0.25;
 }
 body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .activity-item {
   height: 100%;
