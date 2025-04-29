@@ -117,6 +117,9 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
   z-index: 10;
   position: relative;
 }
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password)#page-site-index {
+  padding: 0 !important;
+}
 
 .add-rating-link:hover, .add-rating-link:focus, .add-rating-link:active {
   color: var(--primary);

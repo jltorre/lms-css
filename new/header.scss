@@ -127,6 +127,9 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
             position: relative;
         }
     }
+    &#page-site-index {
+        padding: 0 !important;
+    }
 }
 .add-rating-link {
     &:hover, &:focus, &:active {
