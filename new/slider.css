@@ -98,6 +98,7 @@
 /* HIDE TOP MARGINS FOR TRANSPARENT HEADER */
 .topics.frontpage #section-1 {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .topics.frontpage #section-1 [data-for=sectioninfo].my-3 {
   margin-top: 0 !important;
