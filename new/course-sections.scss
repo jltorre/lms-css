@@ -132,9 +132,10 @@ body.format-buttons {
                                 pointer-events: none;
                             }
                             &:after {
-                                top: 32%;
+                                display: none;
+                                /*top: 32%;
                                 left: 50%;
-                                transform: translateX(-50%);
+                                transform: translateX(-50%);*/
                             }
                         }
                     }

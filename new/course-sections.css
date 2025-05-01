@@ -124,7 +124,8 @@ body.format-buttons #page #page-content #section-1 ul.section.img-text li.activi
   pointer-events: none;
 }
 body.format-buttons #page #page-content #section-1 ul.section.img-text li.activity .activity-item:after {
-  top: 32%;
+  display: none;
+  /*top: 32%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);*/
 }/*# sourceMappingURL=course-sections.css.map */
