@@ -176,9 +176,9 @@ body#page-site-index .paging.paging-morelink {
   color: var(--primary);
 }
 
-div.has-error .nav.navbar.fixed-top.header-transparent {
+body.has-error .nav.navbar.fixed-top.header-transparent {
   background: var(--header-bg) !important;
 }
-div.has-error div[data-rel=fatalerror] {
+body.has-error div[data-rel=fatalerror] {
   margin: 15em 5%;
 }/*# sourceMappingURL=common.css.map */
