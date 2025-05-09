@@ -176,7 +176,7 @@ body#page-site-index .paging.paging-morelink {
   color: var(--primary);
 }
 
-body.has-error .nav.navbar.fixed-top.header-transparent {
+body.has-error div#page-wrapper nav.navbar.fixed-top.header-transparent {
   background: var(--header-bg) !important;
 }
 body.has-error div[data-rel=fatalerror] {
