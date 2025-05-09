@@ -182,3 +182,12 @@ body#page-site-index {
         color: var(--primary);
     }
 }
+
+div.has-error {
+    .nav.navbar.fixed-top.header-transparent {
+        background: var(--header-bg) !important;
+    }
+    div[data-rel="fatalerror"] {
+        margin: 15em 5%;
+    }
+}

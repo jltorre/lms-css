@@ -174,4 +174,11 @@ body#page-site-index .paging.paging-morelink {
 }
 .page-item .page-link {
   color: var(--primary);
+}
+
+div.has-error .nav.navbar.fixed-top.header-transparent {
+  background: var(--header-bg) !important;
+}
+div.has-error div[data-rel=fatalerror] {
+  margin: 15em 5%;
 }/*# sourceMappingURL=common.css.map */
