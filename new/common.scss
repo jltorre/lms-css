@@ -90,6 +90,10 @@ a {
 .btn-outline-secondary {
     border: 1px solid var(--border-color-secondary);
     color: var(--input-color);
+    &:disabled {
+        color: var(--input-color);
+        opacity: .65;
+    }
     &:hover, &:active, &:focus {
         color: var(--input-color);
         background-color: var(--bg-color-secondary);
