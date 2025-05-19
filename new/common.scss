@@ -92,7 +92,6 @@ a {
     color: var(--input-color);
     &:disabled {
         color: var(--input-color);
-        opacity: .65;
     }
     &:hover, &:active, &:focus {
         color: var(--input-color);

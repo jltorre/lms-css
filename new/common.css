@@ -89,7 +89,6 @@ a {
 }
 .btn-outline-secondary:disabled {
   color: var(--input-color);
-  opacity: 0.65;
 }
 .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
   color: var(--input-color);
