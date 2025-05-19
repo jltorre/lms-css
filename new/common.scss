@@ -193,3 +193,8 @@ body.has-error {
         margin: 15em 5%;
     }
 }
+body#page-grade-report-grader-index {
+    .gradeparent {
+        overflow-x: auto;
+    }
+}

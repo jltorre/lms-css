@@ -181,4 +181,8 @@ body.has-error div#page-wrapper nav.navbar.fixed-top.header-transparent {
 }
 body.has-error div[data-rel=fatalerror] {
   margin: 15em 5%;
+}
+
+body#page-grade-report-grader-index .gradeparent {
+  overflow-x: auto;
 }/*# sourceMappingURL=common.css.map */
