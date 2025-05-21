@@ -13,6 +13,11 @@ body.format-buttons {
                     .description {
                         color: var(--text-color);
                     }
+                    .description2 {
+                        img {
+                            border-radius: 12px;
+                        }
+                    }
                     .label-datasheet.container {
                         > .row {
                             display: flex;
@@ -96,7 +101,7 @@ body.format-buttons {
                     }
                 }
             }
-            #section-1 {
+            li[id^="section-"]:not(#section-0) {
                 ul.section.img-text {
                     display: grid;
                     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -109,14 +114,26 @@ body.format-buttons {
                         @media screen and (max-width: 768px) {
                             height: 245;                    
                         }
+                        .activity-item.hiddenactivity .badge {
+                            color: #fff;
+                            mix-blend-mode: normal;
+                            z-index: 1;
+                            margin-left: 5px;
+                        }
                         .description {
                             margin: 0 !important;
                             height: 100%;
                             width: 100%;
+                            background: var(--course-card-bg);
                             .course-description-item {
-                                .description-inner:after {
-                                    z-index: auto;
-                                    opacity: .25;
+                                .description-inner{
+                                    img {
+                                        min-height: 160px !important;
+                                    }
+                                    &:after {
+                                        z-index: auto;
+                                        opacity: .25;
+                                    }
                                 }
                             }
                         }

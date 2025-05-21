@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'ITC Officina RTVE';
 }
 #page.drawers {
-    padding-left: 4em !important;
+    padding-left: 60px !important;
     padding-right: 0;
     height: 100% !important;
 }
@@ -142,8 +142,10 @@ body#page-site-index {
     .coursebox {
         background: #fff !important;
         .coursename {
+            top: 1em !important;
             a {
                 color: #fff;
+                max-height: unset !important;
             }
         }
         .content {
@@ -160,6 +162,7 @@ body#page-site-index {
                 }
                 &:after {
                     border-radius: 0 !important;
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)) !important;
                 }
             }
             .summary,

@@ -1,0 +1,18 @@
+#page-course-search {
+    .coursebox {
+        .coursename {
+            position: relative;
+            left: 5px;
+        }
+        .courseimage {
+            img {
+                border-radius: 12px;
+                max-height: 100%!important;
+                height: 100%!important;
+            }
+            &:after {
+                display: none;   
+            }
+        }
+    }
+}

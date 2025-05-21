@@ -1,0 +1,17 @@
+body.format-tiles {
+    #page-header .w-100:before {
+        display: none;
+    }
+    #section-0 .section.img-text {
+        display: initial !important;
+    }
+    .description {
+        color: var(--text-color);
+        min-height: unset;
+    }
+    ul.tiles {
+        .tile {
+            border-radius: .5rem !important;
+        }
+    }
+}

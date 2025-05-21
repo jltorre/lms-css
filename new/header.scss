@@ -4,6 +4,8 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
         #page-header {
             padding: 10em 0 6em !important;
             background-image: var(--header-img-bg) !important;
+            background-repeat: no-repeat;
+            background-size: cover;
             .page-header-headings {
                 color: #fff;
                 h1.h2 {

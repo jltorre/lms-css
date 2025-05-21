@@ -1,0 +1,114 @@
+/*RTVE*/
+
+:root {
+	--navbar-height: 100px;
+        --slider-height: 50vh;
+}
+
+$primary-font: 'itc_officina_rtvebold';
+@font-face {
+    font-family: 'itc_officina_rtvebold';
+    src: url('itc_officina_rtve_bold-webfont.woff2') format('woff2'),
+         url('itc_officina_rtve_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'itc_officina_rtveregular';
+    src: url('itc_officina_rtve_regular-webfont.woff2') format('woff2'),
+         url('itc_officina_rtve_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'itc_officina_rtve_sansbold';
+    src: url('itcofficinartvesansbold-webfont.woff2') format('woff2'),
+         url('itcofficinartvesansbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'itc_officina_rtve_sansregular';
+    src: url('itcofficinartvesansreg-webfont.woff2') format('woff2'),
+         url('itcofficinartvesansreg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Branding*/
+$primary-brand-1: #EF7D00;     // orange
+$secondary-brand-1: #231F20;   // cyan-bluish-gray
+$light-gray: #f5f5f5;
+$white: #ffffff;
+$black: #000000;
+$hover-link: lighten($primary-brand-1, 10%);
+$light-primary: #ffa000;
+
+
+
+
+$body-background-color: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,160,0,1) 100%);
+
+
+
+$header-background-color: linear-gradient(280deg, rgba(0,0,0,0.6840861344537815) 20%, rgba(28,28,28,1) 63%);
+
+
+
+$header-text-color: $white;
+$header-link-color: $white;
+$header-border-color: $black;
+
+$sidebar-background-color: $black;
+$sidebar-text-color: $white;
+$sidebar-button-hover: #ecbe8a;;
+$sidebar-button-active: $primary-brand-1;
+$sidebar-text-hover: $white;
+
+$pageheader-background-color: $white;
+$pageheader-text-color: $white;
+
+$footer-background-color: transparent;
+$footer-border-color: $black;
+$footer-text-color: $white;
+
+$loginpage-background-color: $secondary-brand-1;
+$loginpage-text-color: $primary-brand-1;
+$loginpage-link-color: $primary-brand-1;
+
+$primarybtn-background-color: $primary-brand-1;
+$primarybtn-text-color: $white;
+$primarybtn-border-color: $primary-brand-1;
+$primarybtn-background-hover:darken($primary-brand-1, 10%);
+$primarybtn-text-hover:$white;
+
+$secondarybtn-background-color:linear-gradient(90deg,#ef7d00 42%,rgba(252,169,79,.9978116246) 75%);
+$secondarybtn-text-color: $white;
+$secondarybtn-border-color: $primary-brand-1;
+$secondarybtn-background-hover: $primary-brand-1;
+$secondarybtn-text-hover: $white;
+
+$breadcrumb-text-color: #ffa000;
+$breadcrumb-link-color: #ffa000;
+$breadcrumb-background-color: $black;
+
+$message-user-button: $white;
+
+$goto-top-text-color: $white;
+$goto-top-background-color: $primary-brand-1;
+$goto-top-border-color: $primary-brand-1;
