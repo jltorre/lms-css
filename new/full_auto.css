@@ -30,14 +30,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /* COURSE PAGE */
-body.format-buttons li.activity .activity-item {
+body.format-buttons:not(.editing) li.activity .activity-item {
   aspect-ratio: 5/2.75;
   border-radius: 10px;
   overflow: hidden;
   background-size: cover !important;
 }
 body.format-buttons.editing li.activity {
-  background: var(--course-card-bg);
+  background: var(--primary);
   border-radius: 12px;
   padding: 0;
 }
@@ -46,8 +46,28 @@ body.format-buttons.editing li.activity * {
   font-weight: 600;
   text-transform: uppercase;
 }
+body.format-buttons.editing li.activity .activity-item {
+  border-radius: 12px;
+}
 body.format-buttons.editing li.activity .activity-item:hover {
   color: var(--text-color) !important;
+}
+body.format-buttons.editing li.activity .activity-item:hover .description {
+  background-color: var(--bg-color-secondary);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+body.format-buttons.editing li.activity .activity-item .activityiconcontainer {
+  border-radius: 12px;
+}
+body.format-buttons.editing li.activity .activity-item .action-menu a:not(.dropdown-toggle) i, body.format-buttons.editing li.activity .activity-item .action-menu span {
+  color: var(--primary);
+}
+body.format-buttons.editing li.activity .activity-item .action-menu a:hover i, body.format-buttons.editing li.activity .activity-item .action-menu a:hover span {
+  color: #fff;
+}
+body.format-buttons.editing li.activity .activity-item .description {
+  min-height: unset !important;
 }
 body.format-buttons.editing li.activity div[data-region=completion-info] {
   position: absolute;
@@ -66,6 +86,21 @@ body.format-buttons.editing li.activity div[data-region=completion-info] .btn {
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   font-weight: 500;
+}
+body.format-buttons.editing li.activity div[data-region=completion-info] span, body.format-buttons.editing li.activity div[data-region=completion-info] span * {
+  color: var(--text-color) !important;
+}
+body.format-buttons.editing li.activity .description .course-description-item:last-child .description-inner {
+  padding: 1rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: var(--course-body-bg);
+}
+body.format-buttons.editing li.activity .description .course-description-item:last-child .description-inner * {
+  color: #000;
+}
+body.format-buttons.editing li.activity:hover {
+  background: var(--primary) !important;
 }
 
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page.drawers .main-inner, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #region-main {
@@ -251,8 +286,8 @@ body#page-site-index .coursebox .content .customfields-container .customfield_to
 }
 body#page-course-index-category .coursebox .tool_courserating-stars .icon,
 body#page-site-index .coursebox .tool_courserating-stars .icon {
-  margin-right: 4px;
-  font-size: 20px;
+  margin-right: 2px;
+  font-size: 18px;
 }
 body#page-course-index-category .paging.paging-morelink,
 body#page-site-index .paging.paging-morelink {
@@ -276,7 +311,8 @@ body.has-error div[data-rel=fatalerror] {
 }
 
 body#page-grade-report-grader-index .gradeparent {
-  overflow-x: auto;
+  max-height: 70vh;
+  overflow: auto;
 }
 
 #page-login-index #page {
@@ -633,7 +669,7 @@ div#page-wrapper nav.navbar.fixed-top .navbar-nav .usermenu .login a {
   --slide-overlay-bg: rgba(0, 0, 0, 0.5);
   --slide-text-color: #ffffff;
   --slide-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  --slide-height: 500px;
+  --slide-height: 300px;
   --slide-indicator-bg: transparent;
   --slide-indicator-border: #fff;
   --slide-indicator-active-bg: #fff;
@@ -832,46 +868,46 @@ body.format-buttons #page #page-content #buttonsectioncontainer .buttonsection.s
   border: 2px solid var(--primary) !important;
   background-color: #f8f9fa !important;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
   padding: 1px;
   list-style: none;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity {
   width: 100%;
   height: 160px;
 }
 @media screen and (max-width: 768px) {
-  body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity {
+  body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity {
     height: 245;
   }
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item.hiddenactivity .badge {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item.hiddenactivity .badge {
   color: #fff;
   mix-blend-mode: normal;
   z-index: 1;
   margin-left: 5px;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .description {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .description {
   margin: 0 !important;
   height: 100%;
   width: 100%;
   background: var(--course-card-bg);
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .description .course-description-item .description-inner img {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .description .course-description-item .description-inner img {
   min-height: 160px !important;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .description .course-description-item .description-inner:after {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .description .course-description-item .description-inner:after {
   z-index: auto;
   opacity: 0.25;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item {
   height: 100%;
   width: 100%;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item[style*=undefined]::before {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item[style*=undefined]::before {
   background-image: var(--course-card-bg);
   content: "";
   position: absolute;
@@ -882,7 +918,7 @@ body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.sect
   bottom: 0;
   pointer-events: none;
 }
-body.format-buttons #page #page-content li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item:after {
+body.format-buttons:not(.editing) li[id^=section-]:not(#section-0) ul.section.img-text li.activity .activity-item:after {
   display: none;
   /*top: 32%;
   left: 50%;
