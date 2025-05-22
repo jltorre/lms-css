@@ -165,9 +165,38 @@ body#page-site-index {
                     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)) !important;
                 }
             }
+            ul.teachers {
+                max-height: 185px;
+                overflow-y: auto;
+            }
             .summary,
             .customfields-container {
-                padding: 0 15px !important;
+                padding: .5rem 0 0 !important;
+                border-top: 1px solid #e2e2e2;
+                .customfield_tool_courserating {
+                    .customfieldname {
+                        visibility: hidden;
+                        position: relative;
+                        &::after {
+                            content: "Valoraciones";
+                            visibility: visible;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                    .customfieldvalue:empty::before {
+                        content: "Sin valoraciones";
+                        color: gray;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .tool_courserating-stars {
+            .icon {
+                margin-right: 4px;
+                font-size: 20px;
             }
         }
     }
@@ -204,3 +233,4 @@ body#page-grade-report-grader-index {
         overflow-x: auto;
     }
 }
+

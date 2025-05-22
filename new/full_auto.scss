@@ -1,3 +1,6 @@
+// AUTO-GENERADO - NO EDITAR MANUALMENTE
+
+// ---------- vars.scss ----------
 :root {
     --primary: #EF7D00;
     --input-bg: #d9d9d959;
@@ -7,13 +10,14 @@
     --bg-color-secondary: #ced4da;
     --default-gradient: linear-gradient(270deg, #F6A30B 5.55%, #ED6E00 50%);
     --course-card-bg: linear-gradient(90deg, #d16e2b 25%, #e88d50 25%);
-    --header-bg: #000;
+    --header-bg: rgba(134, 0, 0, 1);
     --course-body-bg: #F1F7FC;
     --login-img-bg: url(https://portal-yhbrwoi.pentec.dev/wp-content/uploads/2024/01/PAGINA-REGISTRO.jpg);
     --header-img-bg: url(https://haz.institutortve.com/wp-content/uploads/2024/04/bg.jpeg);
     --header-img-bg-calendar: url(https://assets.cdn.ethinkcloud.net/rtve/calendar.png) !important;
 }
-/* COMMON */
+
+// ---------- common.scss ----------
 /* padding para evitar el solapamiento del menu lateral */
 body {
     font-family: Roboto, sans-serif;;
@@ -249,9 +253,10 @@ body#page-grade-report-grader-index {
         overflow-x: auto;
     }
 }
-/* END COMMON */
 
-/* LOGIN PAGE */
+
+
+// ---------- login.scss ----------
 #page-login-index {
     #page {
         background: var(--login-img-bg) 50% 50% no-repeat !important;
@@ -262,9 +267,8 @@ body#page-grade-report-grader-index {
         }
     }
 }
-/* END LOGIN PAGE */
 
-/* FOOTER */
+// ---------- footer.scss ----------
 #page-footer {
     background-color: #000 !important;
     padding: 2em 0 0;
@@ -319,9 +323,8 @@ body#page-grade-report-grader-index {
         }
     }
 }
-/* END FOOTER */
 
-/* DRAWER */
+// ---------- drawer.scss ----------
 .drawer.drawer-left.drawer-primary {
     z-index: 1050;
     position: fixed;
@@ -333,11 +336,10 @@ body#page-grade-report-grader-index {
         color: #ffffff;
     }
 }
-/* END DRAWER */
 
-/* HEADER */
+// ---------- header.scss ----------
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) {    /* HEADER TRANSPARENT */
-    #page[data-region="mainpage"] {
+    #page-wrapper #page {
         margin-top: 0 !important;
         #page-header {
             padding: 10em 0 6em !important;
@@ -479,9 +481,8 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
         color: var(--primary);
     }
 }
-/* END HEADER */
 
-/* NAVIGATION */
+// ---------- navigation.scss ----------
 div#page-wrapper nav.navbar.fixed-top {
     height: 100px;
     padding-left: 0;
@@ -645,9 +646,8 @@ div#page-wrapper nav.navbar.fixed-top {
         background-color: var(--primary);
     }
 }
-/* END NAVIGATION */
 
-/* SLIDER */
+// ---------- slider.scss ----------
 :root {
     --slide-overlay-bg: rgba(0, 0, 0, 0.5);
     --slide-text-color: #ffffff;
@@ -773,9 +773,8 @@ div#page-wrapper nav.navbar.fixed-top {
 #page-site-index .course-description-item .carousel:not(.custom-carousel) {
     display: none;
 }
-/* END SLIDER */
 
-/* COURSE SECTIONS */
+// ---------- course-sections.scss ----------
 body.format-buttons {
     #page {
         #page-content {
@@ -934,14 +933,13 @@ body.format-buttons {
                             }
                         }
                     }
-                }             
+                }        
             }
         }
     }
 }
-/* END COURSE SECTIONS */
 
-/* CALENDAR */
+// ---------- calendar.scss ----------
 #page-calendar-view { 
     #page {
         #page-header {
@@ -985,9 +983,8 @@ body.format-buttons {
         }
     }
 }
-/* END CALENDAR */
 
-/* ACCORDION */
+// ---------- accordion.scss ----------
 body#page-mod-page-view {
     div[id^="accordion"] {
         > .card {
@@ -1005,9 +1002,8 @@ body#page-mod-page-view {
         }
     }
 }
-/* END ACCORDION */
 
-/* COURSE SEARCH */
+// ---------- course-search.scss ----------
 #page-course-search {
     .coursebox {
         .coursename {
@@ -1026,9 +1022,8 @@ body#page-mod-page-view {
         }
     }
 }
-/* END COURSE SEARCH */
 
-/* FORMAT-TILES */
+// ---------- format-tiles.scss ----------
 body.format-tiles {
     #page-header .w-100:before {
         display: none;
@@ -1046,9 +1041,8 @@ body.format-tiles {
         }
     }
 }
-/* END FORMAT-TILES */
 
-/* FORMAT-TOPICS */
+// ---------- format-topics.scss ----------
 body.format-topics {
     li[id^="section-"] .section.img-text {
         .description {
@@ -1057,4 +1051,4 @@ body.format-topics {
         }
     }
 }
-/* END FORMAT-TOPICS */
+

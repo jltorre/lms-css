@@ -1,0 +1,8 @@
+body.format-topics {
+    li[id^="section-"] .section.img-text {
+        .description {
+            min-height: unset !important;
+            color: var(--text-color)
+        }
+    }
+}

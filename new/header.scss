@@ -1,5 +1,5 @@
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) {    /* HEADER TRANSPARENT */
-    #page {
+    #page-wrapper #page {
         margin-top: 0 !important;
         #page-header {
             padding: 10em 0 6em !important;
