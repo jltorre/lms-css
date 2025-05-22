@@ -102,63 +102,65 @@ body.format-buttons {
                     }
                 }
             }
-            li[id^="section-"]:not(#section-0) {
-                ul.section.img-text {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-                    gap: 1rem;
-                    padding: 1px;
-                    list-style: none;
-                    li.activity {
+        }
+    }
+    &:not(.editing) {
+        li[id^="section-"]:not(#section-0) {
+            ul.section.img-text {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 1rem;
+                padding: 1px;
+                list-style: none;
+                li.activity {
+                    width: 100%;
+                    height: 160px;
+                    @media screen and (max-width: 768px) {
+                        height: 245;                    
+                    }
+                    .activity-item.hiddenactivity .badge {
+                        color: #fff;
+                        mix-blend-mode: normal;
+                        z-index: 1;
+                        margin-left: 5px;
+                    }
+                    .description {
+                        margin: 0 !important;
+                        height: 100%;
                         width: 100%;
-                        height: 160px;
-                        @media screen and (max-width: 768px) {
-                            height: 245;                    
-                        }
-                        .activity-item.hiddenactivity .badge {
-                            color: #fff;
-                            mix-blend-mode: normal;
-                            z-index: 1;
-                            margin-left: 5px;
-                        }
-                        .description {
-                            margin: 0 !important;
-                            height: 100%;
-                            width: 100%;
-                            background: var(--course-card-bg);
-                            .course-description-item {
-                                .description-inner{
-                                    img {
-                                        min-height: 160px !important;
-                                    }
-                                    &:after {
-                                        z-index: auto;
-                                        opacity: .25;
-                                    }
+                        background: var(--course-card-bg);
+                        .course-description-item {
+                            .description-inner{
+                                img {
+                                    min-height: 160px !important;
+                                }
+                                &:after {
+                                    z-index: auto;
+                                    opacity: .25;
                                 }
                             }
                         }
-                        .activity-item {
-                            height: 100%;
-                            width: 100%;
-                            &[style*="undefined"]::before {
-                                background-image: var(--course-card-bg);
-                                content: '';
-                                position: absolute;
-                                width: 100%; height: 100%;
-                                top: 0; left: 0; bottom: 0;
-                                pointer-events: none;
-                            }
-                            &:after {
-                                display: none;
-                                /*top: 32%;
-                                left: 50%;
-                                transform: translateX(-50%);*/
-                            }
+                    }
+                    .activity-item {
+                        height: 100%;
+                        width: 100%;
+                        &[style*="undefined"]::before {
+                            background-image: var(--course-card-bg);
+                            content: '';
+                            position: absolute;
+                            width: 100%; height: 100%;
+                            top: 0; left: 0; bottom: 0;
+                            pointer-events: none;
+                        }
+                        &:after {
+                            display: none;
+                            /*top: 32%;
+                            left: 50%;
+                            transform: translateX(-50%);*/
                         }
                     }
-                }        
-            }
+                }
+            }        
         }
     }
 }
