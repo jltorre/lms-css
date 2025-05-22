@@ -13,17 +13,52 @@ h1, h2, h3, h4, h5 {
 
 /* COURSE PAGE */
 body.format-buttons {
-    &:not(.editing) {
+    li.activity {
+        .activity-item {
+            aspect-ratio: 5/2.75;
+            border-radius: 10px;
+            overflow: hidden;
+            background-size: cover !important;
+        }
+    }
+    &.editing {
         li.activity {
+            background: var(--course-card-bg);
+            border-radius: 12px;
+            padding: 0;
+            * {
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
             .activity-item {
-                aspect-ratio: 5/2.75;
-                border-radius: 10px;
-                overflow: hidden;
-                background-size: cover !important;
+                &:hover {
+                    color: var(--text-color) !important;
+                }
+            }
+            div[data-region="completion-info"] {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                padding: 5px;
+                z-index: 1;
+                text-align: right;
+                .btn {
+                    background-color: #fff;
+                    color: var(--text-color) !important;
+                    border-color: #fff;
+                    opacity: .85;
+                    font-size: .75rem;
+                    padding: .25rem .5rem;
+                    font-weight: 500;
+                }
+                
             }
         }
     }
 }
+
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) {
     #page.drawers .main-inner, #region-main {
         background-color: var(--course-body-bg);

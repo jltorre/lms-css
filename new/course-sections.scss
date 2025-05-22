@@ -18,58 +18,59 @@ body.format-buttons {
                             border-radius: 12px;
                         }
                     }
-                    .label-datasheet.container {
-                        > .row {
-                            display: flex;
-                            flex-wrap: wrap;
-                        
-                            // Estilo base (móvil)
-                            > [class*="col-"] {
+                    > .no-overflow {
+                        overflow: hidden;
+                    }
+                    .row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0 1rem;                    
+                        // Estilo base (móvil)
+                        > [class*="col-"] {
+                            flex: 1 1 100%;
+                            max-width: 100%;
+                            width: 100%;
+                            h5 {
+                                margin-bottom: 15px;
+                                font-size: 1.3rem;
+                                font-weight: 800;
+                            }
+                            .description {
+                                font-size: 16px;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            > .col-lg-4 {
                                 flex: 1 1 100%;
                                 max-width: 100%;
                                 width: 100%;
-                                h5 {
-                                    margin-bottom: 15px;
-                                    font-size: 1.3rem;
-                                    font-weight: 500;
-                                }
-                                .description {
-                                    font-size: 16px;
-                                }
                             }
-                            @media (min-width: 768px) {
-                                > .col-lg-4 {
-                                    flex: 1 1 100%;
-                                    max-width: 100%;
-                                    width: 100%;
-                                }
-                        
-                                > .col-lg-2 {
-                                    flex: 1 1 50%;
-                                    max-width: 50%;
-                                    width: 50%;
-                                }
+                    
+                            > .col-lg-2 {
+                                flex: 1 1 50%;
+                                max-width: 50%;
+                                width: 50%;
                             }
-                            @media (min-width: 992px) {
-                                > [class*="col-lg-"] {
-                                    flex: 1 1 0%;
-                                    max-width: none !important;
-                                    width: auto !important;
-                                }
-                        
-                                > .col-lg-4 {
-                                    flex: 2 1 0% !important;
-                                }
-                        
-                                .col-sm-12.col-lg-2.p-1 {
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                        
-                                    .action-buttons {
-                                        a {
-                                            margin: 7px 0 !important;
-                                        }
+                        }
+                        @media (min-width: 992px) {
+                            > [class*="col-lg-"] {
+                                flex: 1 1 0%;
+                                max-width: none !important;
+                                width: auto !important;
+                            }
+                    
+                            > .col-lg-4 {
+                                flex: 2 1 0% !important;
+                            }
+                    
+                            .col-sm-12.col-lg-2.p-1 {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                    
+                                .action-buttons {
+                                    a {
+                                        margin: 7px 0 !important;
                                     }
                                 }
                             }

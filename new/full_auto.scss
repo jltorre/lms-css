@@ -33,17 +33,52 @@ h1, h2, h3, h4, h5 {
 
 /* COURSE PAGE */
 body.format-buttons {
-    &:not(.editing) {
+    li.activity {
+        .activity-item {
+            aspect-ratio: 5/2.75;
+            border-radius: 10px;
+            overflow: hidden;
+            background-size: cover !important;
+        }
+    }
+    &.editing {
         li.activity {
+            background: var(--course-card-bg);
+            border-radius: 12px;
+            padding: 0;
+            * {
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
             .activity-item {
-                aspect-ratio: 5/2.75;
-                border-radius: 10px;
-                overflow: hidden;
-                background-size: cover !important;
+                &:hover {
+                    color: var(--text-color) !important;
+                }
+            }
+            div[data-region="completion-info"] {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                padding: 5px;
+                z-index: 1;
+                text-align: right;
+                .btn {
+                    background-color: #fff;
+                    color: var(--text-color) !important;
+                    border-color: #fff;
+                    opacity: .85;
+                    font-size: .75rem;
+                    padding: .25rem .5rem;
+                    font-weight: 500;
+                }
+                
             }
         }
     }
 }
+
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) {
     #page.drawers .main-inner, #region-main {
         background-color: var(--course-body-bg);
@@ -795,58 +830,59 @@ body.format-buttons {
                             border-radius: 12px;
                         }
                     }
-                    .label-datasheet.container {
-                        > .row {
-                            display: flex;
-                            flex-wrap: wrap;
-                        
-                            // Estilo base (móvil)
-                            > [class*="col-"] {
+                    > .no-overflow {
+                        overflow: hidden;
+                    }
+                    .row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0 1rem;                    
+                        // Estilo base (móvil)
+                        > [class*="col-"] {
+                            flex: 1 1 100%;
+                            max-width: 100%;
+                            width: 100%;
+                            h5 {
+                                margin-bottom: 15px;
+                                font-size: 1.3rem;
+                                font-weight: 800;
+                            }
+                            .description {
+                                font-size: 16px;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            > .col-lg-4 {
                                 flex: 1 1 100%;
                                 max-width: 100%;
                                 width: 100%;
-                                h5 {
-                                    margin-bottom: 15px;
-                                    font-size: 1.3rem;
-                                    font-weight: 500;
-                                }
-                                .description {
-                                    font-size: 16px;
-                                }
                             }
-                            @media (min-width: 768px) {
-                                > .col-lg-4 {
-                                    flex: 1 1 100%;
-                                    max-width: 100%;
-                                    width: 100%;
-                                }
-                        
-                                > .col-lg-2 {
-                                    flex: 1 1 50%;
-                                    max-width: 50%;
-                                    width: 50%;
-                                }
+                    
+                            > .col-lg-2 {
+                                flex: 1 1 50%;
+                                max-width: 50%;
+                                width: 50%;
                             }
-                            @media (min-width: 992px) {
-                                > [class*="col-lg-"] {
-                                    flex: 1 1 0%;
-                                    max-width: none !important;
-                                    width: auto !important;
-                                }
-                        
-                                > .col-lg-4 {
-                                    flex: 2 1 0% !important;
-                                }
-                        
-                                .col-sm-12.col-lg-2.p-1 {
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                        
-                                    .action-buttons {
-                                        a {
-                                            margin: 7px 0 !important;
-                                        }
+                        }
+                        @media (min-width: 992px) {
+                            > [class*="col-lg-"] {
+                                flex: 1 1 0%;
+                                max-width: none !important;
+                                width: auto !important;
+                            }
+                    
+                            > .col-lg-4 {
+                                flex: 2 1 0% !important;
+                            }
+                    
+                            .col-sm-12.col-lg-2.p-1 {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                    
+                                .action-buttons {
+                                    a {
+                                        margin: 7px 0 !important;
                                     }
                                 }
                             }
