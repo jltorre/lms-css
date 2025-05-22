@@ -3,36 +3,38 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
   /* END NAVIGATION ON TOP HEADER */
   /* NO SECONDARY-NAV FIX */
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page {
   margin-top: 0 !important;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header {
   padding: 10em 0 6em !important;
   background-image: var(--header-img-bg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-header-headings {
   color: #fff;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings h1.h2 {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-header-headings h1.h2 {
   font-size: 2rem;
 }
 @media screen and (max-width: 768px) {
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-header-headings {
     padding: 0 0.5rem;
   }
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-header-headings h1.h2 {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-header-headings h1.h2 {
     font-size: 1.5rem;
     margin-top: 0.2em;
   }
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb a {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .breadcrumb a {
   color: #fff !important;
 }
 @media screen and (max-width: 768px) {
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .breadcrumb {
     flex-wrap: wrap !important;
   }
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .breadcrumb a {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .breadcrumb a {
     display: inline-block;
     max-width: 100%;
     overflow-wrap: break-word;
@@ -40,31 +42,31 @@ body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup)
     white-space: normal;
   }
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header #message-user-button {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 0.5rem;
   margin-left: 15px;
 }
-body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button:hover, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button:focus, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header #message-user-button:active {
+body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header #message-user-button:hover, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header #message-user-button:focus, body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header #message-user-button:active {
   color: var(--primary);
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-context-header {
     position: relative;
     padding-bottom: 4em;
   }
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header .userinitials.size-100 {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-context-header .userinitials.size-100 {
     width: 50px;
     height: 50px;
     font-size: 1rem;
   }
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header .header-button-group {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-context-header .header-button-group {
     position: absolute;
     bottom: 0;
   }
-  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page #page-header .page-context-header .header-button-group a {
+  body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) #page-wrapper #page #page-header .page-context-header .header-button-group a {
     margin-left: 0;
   }
 }

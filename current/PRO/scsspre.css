@@ -1,0 +1,31 @@
+/*RTVE*/
+:root {
+  --navbar-height: 100px;
+  --slider-height: 50vh;
+}
+
+@font-face {
+  font-family: "itc_officina_rtvebold";
+  src: url("itc_officina_rtve_bold-webfont.woff2") format("woff2"), url("itc_officina_rtve_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "itc_officina_rtveregular";
+  src: url("itc_officina_rtve_regular-webfont.woff2") format("woff2"), url("itc_officina_rtve_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "itc_officina_rtve_sansbold";
+  src: url("itcofficinartvesansbold-webfont.woff2") format("woff2"), url("itcofficinartvesansbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "itc_officina_rtve_sansregular";
+  src: url("itcofficinartvesansreg-webfont.woff2") format("woff2"), url("itcofficinartvesansreg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Branding*//*# sourceMappingURL=scsspre.css.map */

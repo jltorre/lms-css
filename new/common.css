@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #page.drawers {
-  padding-left: 4em !important;
+  padding-left: 60px !important;
   padding-right: 0;
   height: 100% !important;
 }
@@ -136,9 +136,14 @@ body#page-course-index-category .coursebox,
 body#page-site-index .coursebox {
   background: #fff !important;
 }
+body#page-course-index-category .coursebox .coursename,
+body#page-site-index .coursebox .coursename {
+  top: 1em !important;
+}
 body#page-course-index-category .coursebox .coursename a,
 body#page-site-index .coursebox .coursename a {
   color: #fff;
+  max-height: unset !important;
 }
 body#page-course-index-category .coursebox .content .courseimage,
 body#page-site-index .coursebox .content .courseimage {
@@ -158,12 +163,49 @@ body#page-site-index .coursebox .content .courseimage > img {
 body#page-course-index-category .coursebox .content .courseimage:after,
 body#page-site-index .coursebox .content .courseimage:after {
   border-radius: 0 !important;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) !important;
+}
+body#page-course-index-category .coursebox .content ul.teachers,
+body#page-site-index .coursebox .content ul.teachers {
+  max-height: 185px;
+  overflow-y: auto;
 }
 body#page-course-index-category .coursebox .content .summary,
 body#page-course-index-category .coursebox .content .customfields-container,
 body#page-site-index .coursebox .content .summary,
 body#page-site-index .coursebox .content .customfields-container {
-  padding: 0 15px !important;
+  padding: 0.5rem 0 0 !important;
+  border-top: 1px solid #e2e2e2;
+}
+body#page-course-index-category .coursebox .content .summary .customfield_tool_courserating .customfieldname,
+body#page-course-index-category .coursebox .content .customfields-container .customfield_tool_courserating .customfieldname,
+body#page-site-index .coursebox .content .summary .customfield_tool_courserating .customfieldname,
+body#page-site-index .coursebox .content .customfields-container .customfield_tool_courserating .customfieldname {
+  visibility: hidden;
+  position: relative;
+}
+body#page-course-index-category .coursebox .content .summary .customfield_tool_courserating .customfieldname::after,
+body#page-course-index-category .coursebox .content .customfields-container .customfield_tool_courserating .customfieldname::after,
+body#page-site-index .coursebox .content .summary .customfield_tool_courserating .customfieldname::after,
+body#page-site-index .coursebox .content .customfields-container .customfield_tool_courserating .customfieldname::after {
+  content: "Valoraciones";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body#page-course-index-category .coursebox .content .summary .customfield_tool_courserating .customfieldvalue:empty::before,
+body#page-course-index-category .coursebox .content .customfields-container .customfield_tool_courserating .customfieldvalue:empty::before,
+body#page-site-index .coursebox .content .summary .customfield_tool_courserating .customfieldvalue:empty::before,
+body#page-site-index .coursebox .content .customfields-container .customfield_tool_courserating .customfieldvalue:empty::before {
+  content: "Sin valoraciones";
+  color: gray;
+  font-style: italic;
+}
+body#page-course-index-category .coursebox .tool_courserating-stars .icon,
+body#page-site-index .coursebox .tool_courserating-stars .icon {
+  margin-right: 4px;
+  font-size: 20px;
 }
 body#page-course-index-category .paging.paging-morelink,
 body#page-site-index .paging.paging-morelink {

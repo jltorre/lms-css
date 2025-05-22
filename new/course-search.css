@@ -1,0 +1,12 @@
+#page-course-search .coursebox .coursename {
+  position: relative;
+  left: 5px;
+}
+#page-course-search .coursebox .courseimage img {
+  border-radius: 12px;
+  max-height: 100% !important;
+  height: 100% !important;
+}
+#page-course-search .coursebox .courseimage:after {
+  display: none;
+}/*# sourceMappingURL=course-search.css.map */

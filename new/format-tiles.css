@@ -1,0 +1,13 @@
+body.format-tiles #page-header .w-100:before {
+  display: none;
+}
+body.format-tiles #section-0 .section.img-text {
+  display: initial !important;
+}
+body.format-tiles .description {
+  color: var(--text-color);
+  min-height: unset;
+}
+body.format-tiles ul.tiles .tile {
+  border-radius: 0.5rem !important;
+}/*# sourceMappingURL=format-tiles.css.map */
