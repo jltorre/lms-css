@@ -16,7 +16,8 @@ const scssFiles = [
   'accordion.scss',
   'course-search.scss',
   'format-tiles.scss',
-  'format-topics.scss'
+  'format-topics.scss',
+  'grading.scss'
 ];
 
 // Ruta de salida

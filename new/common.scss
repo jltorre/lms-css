@@ -97,6 +97,13 @@ body.format-buttons {
             }
         }
     }
+    ul.slots {
+        li.section {
+            li.activity * {
+                color: var(--text-color) !important;
+            }
+        }
+    }
 }
 
 body:not(#page-mod-assign-grader):not(#page-login-index):not(#page-login-signup):not(#page-h5p-embed):not(#page-login-forgot_password) {
