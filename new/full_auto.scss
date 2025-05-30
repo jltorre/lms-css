@@ -337,6 +337,22 @@ body#page-grade-report-grader-index {
     }
 }
 
+[data-region=right-hand-drawer].drawer {
+    top: 100px;
+    height: calc(100% - 100px);
+}
+
+#page-message-index {
+    #page-header {
+        display: block;
+    }
+    .message-app {
+        > .container-fluid {
+            padding-right: 0;
+        }
+    }
+}
+
 // ---------- login.scss ----------
 #page-login-index {
     #page {
