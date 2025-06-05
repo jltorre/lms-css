@@ -114,10 +114,8 @@ body.format-buttons {
                 list-style: none;
                 li.activity {
                     width: 100%;
-                    height: 160px;
-                    @media screen and (max-width: 768px) {
-                        height: 245;                    
-                    }
+                    height: unset;
+                    aspect-ratio: 1286 / 719;
                     .activity-item.hiddenactivity .badge {
                         color: #fff;
                         mix-blend-mode: normal;
